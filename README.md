@@ -6,4 +6,4 @@
  
 
 # PHP
-- [How to use **in_array()**](#in_array)
+- [How to use **in_array()**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/in_array.md)
