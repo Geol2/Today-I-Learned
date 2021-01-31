@@ -23,4 +23,24 @@ Example 1. 기본적인 배열 만드는 방법
 ?>
 ```
 
+Example 2. 자동 배열 인덱스 참고
+```
+<?php
+    $array = array(1, 1, 1, 1,  1, 8 => 1,  4 => 1, 19, 3 => 13);
+    print_r($array);
+?>
+```
+Example 2 output.
+```
+Array
+(
+    [0] => 1
+    [1] => 1
+    [2] => 1
+    [3] => 13
+    [4] => 1
+    [8] => 1
+    [9] => 19
+)
+```
 [docs](https://www.php.net/manual/en/function.array)
