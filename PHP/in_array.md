@@ -18,6 +18,11 @@
     }
 ?>
 ```
+Example 1 output :
+```
+Got Irix
+```
+---
 ### Example 2
 ```
 <?php
@@ -32,6 +37,11 @@
     }
 ?>
 ```
+Example 2 output :
+```
+1.13 found with strict check
+```
+---
 ### Example 3
 ```
 <?php
@@ -50,3 +60,10 @@
     }
 ?>
 ```
+Example 3 output : 
+```
+'ph' was found
+'o' was found
+```
+---
+[Docs](https://www.php.net/manual/en/function.in-array.php)
