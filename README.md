@@ -3,6 +3,7 @@
 ## Category
 - [PHP](#PHP)
 - [C++](#C++)
+- [Algorithm](#Algorithm)
 - [DATABASE](#DATABASE)
  
 ---
@@ -13,3 +14,6 @@
 
 # C++
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
+
+# Algorithm
+- [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm/number_of_alphabets.md)
