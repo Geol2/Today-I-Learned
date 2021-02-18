@@ -86,3 +86,5 @@
 - yaconf (7.0+)
 - yaf
 - yaml
+
+- ex
