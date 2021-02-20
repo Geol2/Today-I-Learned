@@ -12,6 +12,7 @@
 - [How to use **in_array()**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/in_array.md)
 - [**Array**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/array.md)
 - [count()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/count.md)
+- [init_set()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/init_set.md)
 - [**use**, **namespace** Keyword](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/use_namespace.md)
 - [PHP **Runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
 
