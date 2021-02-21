@@ -4,11 +4,11 @@
 - 컬럼 명 대신 별칭이나 정수로 사용할 수 있다.
 - 기본적으로 오름차순(ASC) 형태로 적용이 되며 아래와 같이 마지막에 넣어준다.
 ```
-SELECT 칼럼명 [ALIAS 이름]
-FROM 테이블명
-[WHERE 조건식]
-[GROUP BY 칼럼이나 표현식]
-[HAVING 그룹조건식]
-[ORDER BY 칼럼이나 표현식 [ASC | DESC]]
+5. SELECT 칼럼명 [ALIAS 이름]
+1. FROM 테이블명
+2. [WHERE 조건식]
+3. [GROUP BY 칼럼이나 표현식]
+4. [HAVING 그룹조건식]
+6. [ORDER BY 칼럼이나 표현식 [ASC | DESC]]
 ```
 
