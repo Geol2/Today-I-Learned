@@ -14,7 +14,7 @@
 - [count()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/count.md)
 - [init_set()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/init_set.md)
 - [**use**, **namespace** Keyword](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/use_namespace.md)
-- [PHP **Runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
+- [PHP **External Library runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
 
 # C++
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
