@@ -26,6 +26,6 @@
 # Database
 - [What is Transaction?](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
 - [Join](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Join.md)
-
+- [Order By 및 쿼리문장순서](https://github.com/Geol2/Today-I-Learned/blob/main/Database/OrderBy.md)
 # Algorithm
 - [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm/number_of_alphabets.md)
