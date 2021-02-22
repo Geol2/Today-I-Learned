@@ -10,19 +10,20 @@
 ## EQUI JOIN
 - 두 테이블 간에 칼럼 값들이 서로 정확하게 일치하는 경우에 사용되는 방법인데 PK <-> FK 의 관계로만 성립하는 것은 아니지만 기본적 기반을 가진다.
 
-```
+```SQL
 SELECT 테이블1.칼럼명, 테이블2.칼럼명, ...
 FROM 테이블1, 테이블2
 WHERE 테이블2.칼럼명 = 테이블1.칼럼명
 ```
 
 ANSI/SQL
-```
+```SQL
 SELECT 테이블1.칼럼명, 테이블2.칼럼명, ...
 FROM 테이블1, 테이블2
 ON 테이블2.칼럼명 = 테이블1.칼럼명
 ```
 
+Example. Dummy Data
 ```SQL
 - CREATE TABLE PLAYER (
 	PLAYER_NAME CHAR(5) NOT NULL,
@@ -74,11 +75,55 @@ WHERE TEAM.TEAM_ID = PLAYER.TEAM_ID;
 ```
 
 ## Non EQUI JOIN
-- 두 개의 테이블 간에 논리적인 연관 관계를 갖고 있으나, 칼럼 값들이 서로 일치하지 않는 경우에 사용된다.
+- 두 개의 테이블 간에 논리적인 연관 관계를 갖고 있으나, 칼럼 값들이 서로 정확하게 일치하지 않는 경우에 사용된다.
 - 데이터 모델에 따라 Non EQUI JOIN이 불가능한 경우도 있다.
 
-```
+```SQL
 SELECT 테이블1.칼럼명, 테이블2.칼럼명, ...
 FROM 테이블1, 테이블2
-WHERE 테이블1.칼럼명 BETWEEN 테이블2.칼럼명1 AND 테이블2.칼럼명;
+WHERE 테이블1.칼럼명 BETWEEN 테이블2.칼럼명1 AND 테이블2.칼럼명2;
 ```
+
+
+- EMP 테이블
+
+| ENAME  | SAL  | 
+|:------:|:----:|
+| SMITH  | 800  |
+| ALLEN  | 1600 |
+| WARD   | 1250 |
+| JONES  | 2975 |
+| MARTIN | 1250 |
+| BLAKE  | 2850 |
+| CLARK  | 2450 |
+| SCOTT  | 3000 |
+| KING   | 5000 |
+
+- SALGRADE 테이블
+
+| GRADE  | LOSAL| HISAL | 
+|:------:|:----:|:-----:|
+| 1      | 700  | 1200  |
+| 2      | 1201 | 1400  |
+| 3      | 1401 | 2000  |
+| 4      | 2001 | 3000  |
+| 5      | 3001 | 9999  |
+
+- 위 두 테이블을 아래 구문을 실행하면,
+```SQL
+SELECT A.ENAME, A.JOB, B.GRADE
+FROM EMP A, SALGRADE B
+WHERE A.SAL BETWEEN B.LOCAL AND B.HISAL;
+```
+
+| ENAME  | SAL  |  GRADE | LOSAL  | HISAL |
+|:------:|:----:|:------:|:------:|:-----:|
+| SMITH  | 800  | 1      | 700    | 1200  |
+| ALLEN  | 1600 | 3      | 1401   | 2000  |
+| WARD   | 1250 | 2      | 1201   | 1400  |
+| JONES  | 2975 | 4      | 2001   | 3000  |
+| MARTIN | 1250 | 2      | 1201   | 1400  |
+| BLAKE  | 2850 | 4      | 2001   | 3000  |
+| CLARK  | 2450 | 4      | 2001   | 3000  |
+| SCOTT  | 3000 | 4      | 2001   | 3000  |
+| KING   | 5000 | 5      | 3001   | 9999  |
