@@ -7,7 +7,7 @@
 - "key => values" 로 흔히 표현됨.
 
 Example 1. 기본적인 배열 만드는 방법
-```
+```PHP
 // PHP 5.4 이하 라면..
 <?php
     $array = array(
@@ -24,14 +24,14 @@ Example 1. 기본적인 배열 만드는 방법
 ```
 
 Example 2. 자동 배열 인덱스 참고
-```
+```PHP
 <?php
     $array = array(1, 1, 1, 1,  1, 8 => 1,  4 => 1, 19, 3 => 13);
     print_r($array);
 ?>
 ```
 Example 2 output.
-```
+```PHP
 Array
 (
     [0] => 1

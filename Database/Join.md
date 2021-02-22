@@ -23,6 +23,56 @@ FROM 테이블1, 테이블2
 ON 테이블2.칼럼명 = 테이블1.칼럼명
 ```
 
+```SQL
+- CREATE TABLE PLAYER (
+	PLAYER_NAME CHAR(5) NOT NULL,
+    BACK_NO INT(2) NOT NULL,
+    TEAM_ID CHAR(4)
+);
+DROP TABLE PLAYER;
+
+- INSERT INTO PLAYER VALUES
+('이고르', 21, 'K06'),
+('오비나', 26, 'K10'),
+('윤원일', 45, 'K02'),
+('페르난도', 44, 'K04'),
+('레오', 45, 'K03'),
+('실바', 45, 'K07'),
+('무스타파', 77, 'K04'),
+('에디', 7, 'K01'),
+('알리송', 14, 'K014'),
+('쟈스민', 33, 'K08'),
+('디디', 8, 'K06');
+
+- CREATE TABLE TEAM (
+	TEAM_ID CHAR(4) NOT NULL,
+    TEAM_NAME CHAR(10) NOT NULL,
+    REGION_NAME CHAR(4)
+);
+DROP TABLE TEAM;
+
+- INSERT INTO TEAM VALUES
+('K05', '현대모터스', '전북'),
+('K08', '일화천마', '성남'),
+('K03', '스틸러스', '포항'),
+('K07', '드래곤즈', '전남'),
+('K09', 'FC서울', '서울'),
+('K04', '유나이티드', '인천'),
+('K11', '경남FC', '경남'),
+('K01', '울산현대', '울산'),
+('K10', '시티즌', '대전'),
+('K02', '삼성블루윙즈', '수원'),
+('K12', '광주상무', '광주'),
+('K06', '아이파크', '부산'),
+('K13', '강원FC', '강원'),
+('K14', '제주유나이티드FC', '재주'),
+('K15', '대구FC', '대구');
+
+- SELECT PLAYER_NAME, PLAYER.BACK_NO, PLAYER.TEAM_ID, TEAM.TEAM_NAME, TEAM.REGION_NAME
+FROM PLAYER, TEAM
+WHERE TEAM.TEAM_ID = PLAYER.TEAM_ID;
+```
+
 ## Non EQUI JOIN
 - 두 개의 테이블 간에 논리적인 연관 관계를 갖고 있으나, 칼럼 값들이 서로 일치하지 않는 경우에 사용된다.
 - 데이터 모델에 따라 Non EQUI JOIN이 불가능한 경우도 있다.
