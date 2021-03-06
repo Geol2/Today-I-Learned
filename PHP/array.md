@@ -8,14 +8,14 @@
 
 Example 1. 기본적인 배열 만드는 방법
 ```PHP
-// PHP 5.4 이하 라면..
+// PHP 배열 표준 선언 방법
 <?php
     $array = array(
         "foo" => "bar",
         "bar" => "foo",
     );
 
-    // PHP 5.4 부터 지원되는 배열 선언 방법
+    // PHP 배열 약어 선언
     $array = [
         "foo" => "bar",
         "bar" => "foo",
