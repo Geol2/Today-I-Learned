@@ -12,6 +12,7 @@
   --size-font: 18px;
   --base-space: 8px;
   --size-border: 4px;
+  --size-thumbnail: 40px;
 
   /* animation */
   --size-animation-button: 300ms;
@@ -44,6 +45,11 @@ body {
   margin-right: var(--base-space);
 }
 
+.btnroot {
+  display: flex;
+  align-items: center;
+}
+
 .imgBtn {
   height: var(--size-button);
   width: var(--size-button);
@@ -69,9 +75,26 @@ body {
 }
 
 .items {
-  background-color: var(--color-white);
   height: 60%;
   width: 60%;
   list-style: none;
   padding-left: 0;
+  overflow-y: scroll;
+}
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
+}
+
+.item_thumbnail {
+  width: var(--size-thumbnail);
+}
+
+.item__description {
+  margin-left: var(--base-space);
+  font-size: var(--size-font);
 }
