@@ -6,7 +6,7 @@
 - 리턴 타입은 bool 타입으로 반환함.
 
 ### Example 1
-```
+```php
 <?php
     // array type "$os"
     $os = array("Mac", "NT", "Irix", "Linux");
@@ -24,7 +24,7 @@ Got Irix
 ```
 ---
 ### Example 2
-```
+```php
 <?php
     $a = array('1.10', 12.4, 1.13);
 
@@ -43,7 +43,7 @@ Example 2 output :
 ```
 ---
 ### Example 3
-```
+```php
 <?php
     $a = array(array('p', 'h'), array('p', 'r'), 'o');
 

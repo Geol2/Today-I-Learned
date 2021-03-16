@@ -3,52 +3,52 @@
 ## **use**
 - use 키워드를 사용하기 전 코드이고 여러 개를 만들어야 하면 줄줄 길어진다.
 
-```
+```php
 <?php
-    $model = new App\Medels\NewsModel();
+  $model = new App\Medels\NewsModel();
 ```
 
 - use 키워드를 사용함으로써 더 깔끔하게 만들어줄 수 있다.
 - 기본적으로 사용되는 별칭으로 봐도 무방하다.
-```
+```php
 <?php
 
-    use App\Models\NewsModels;
-    ...
-    $model = new NewsModel();
-    ...
+  use App\Models\NewsModels;
+  ...
+  $model = new NewsModel();
+  ...
 ```
 
 - use ... as ... : as 를 사용함으로써 별칭을 붙여줄 수도 있다.
-```
+```php
 <?php
 
-    use App\Models\NewsModels as NewModel;
-    ...
-    $model = new NewModel();
-    ...
+  use App\Models\NewsModels as NewModel;
+  ...
+  $model = new NewModel();
+  ...
 ```
 - 함수, 상수에 별칭을 사용할 수도 있다.
-```
+```php
 <?php
-    use func ...; // 함수에 별칭
-    use constant ...; // 상수에 별칭
+  use func ...; // 함수에 별칭
+  use constant ...; // 상수에 별칭
 ```
 
 <br>
 - 아래와 같이 사용하진 않고 타이핑을 더해서 한 문장마다 use를 사용하도록 한다.
 
-```
+```php
 <?php
-    use Symfony\Component\HttpFoundation\Request,
-        Symfony\Component\HttpFoundation\Response,
-        Symfony\Component\HttpFoundation\Cookie; // (X)
+  use Symfony\Component\HttpFoundation\Request,
+      Symfony\Component\HttpFoundation\Response,
+      Symfony\Component\HttpFoundation\Cookie; // (X)
 ```
-```
+```php
 <?php
-    use Symfony\Component\HttpFoundation\Request;
-    use Symfony\Component\HttpFoundation\Response;
-    use Symfony\Component\HttpFoundation\Cookie; // (O)
+  use Symfony\Component\HttpFoundation\Request;
+  use Symfony\Component\HttpFoundation\Response;
+  use Symfony\Component\HttpFoundation\Cookie; // (O)
 ```
 
 ---
