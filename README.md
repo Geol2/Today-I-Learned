@@ -21,6 +21,10 @@
 - [PHP **External Library runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
 - [What is CodeIgniter4 **MVC**?](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/patterns.md)
 
+# Javascript
+
+- [sort()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/sort.md)
+
 # C++
 
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
