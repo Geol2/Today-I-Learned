@@ -13,7 +13,7 @@
 
 # PHP
 
-- [isset()](ttps://github.com/Geol2/Today-I-Learned/blob/main/PHP/isset.md)
+- [isset()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/isset.md)
 - [How to use **in_array()**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/in_array.md)
 - [**Array**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/array.md)
 - [count()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/count.md)
