@@ -25,6 +25,7 @@
 ### CodeIgniter 3, 4
 
 - [What is CodeIgniter4 **MVC**?](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/patterns.md)
+- [result_array() || row_array()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/result_row_array.md)
 
 # Javascript
 
