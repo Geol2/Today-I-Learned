@@ -4,7 +4,7 @@
 
 - [PHP](#PHP)
 - [C++](#C++)
-- [Algorithm](#Algorithm)
+- [Algorithm_Math](#Algorithm_Math)
 - [Refactoring](#Refactoring)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
@@ -39,13 +39,15 @@
 
 # Database
 
-- [What is Transaction?](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
+- [Transaction](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
 - [Join](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Join.md)
 - [Order By 및 쿼리문장순서](https://github.com/Geol2/Today-I-Learned/blob/main/Database/OrderBy.md)
 
-# Algorithm
+# Algorithm/Math
 
-- [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm/number_of_alphabets.md)
+- [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/number_of_alphabets.md)
+- [에라토스테네스의 체](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/Prime)
+- [투 포인터 알고리즘](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/toPointer)
 
 # Refactoring
 
