@@ -8,6 +8,7 @@
 - [Refactoring](#Refactoring)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
+- [Voca](#Voca)
 
 ---
 
@@ -56,3 +57,7 @@
 # Refactoring
 
 - [CodeReview](https://github.com/Geol2/Today-I-Learned/blob/main/Refactoring/CodeReview.md)
+
+# Voca
+
+- [브룩스의 법칙](https://github.com/Geol2/Today-I-Learned/blob/main/Devel_VOCA/brooksLaw.md)
