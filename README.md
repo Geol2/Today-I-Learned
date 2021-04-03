@@ -35,6 +35,7 @@
 # C++
 
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
+- [next_permutation()](https://github.com/Geol2/Today-I-Learned/blob/main/C++/next_permutation.md)
 
 # Network
 
@@ -53,6 +54,10 @@
 - [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/number_of_alphabets.md)
 - [에라토스테네스의 체](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/Prime.md)
 - [투 포인터 알고리즘](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/toPointer.md)
+
+# Security
+
+- [XSS]()
 
 # Refactoring
 
