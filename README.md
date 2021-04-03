@@ -31,6 +31,7 @@
 # Javascript
 
 - [sort()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/sort.md)
+- [substr()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/substr.md)
 
 # C++
 
