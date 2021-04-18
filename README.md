@@ -19,6 +19,7 @@
 - [**Array**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/array.md)
 - [count()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/count.md)
 - [init_set()](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/init_set.md)
+- [PHPMailer](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/email.md)
 - [**use**, **namespace** Keyword](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/use_namespace.md)
 - [**autoload**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/autoload.md)
 - [PHP **External Library runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
