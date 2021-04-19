@@ -1,6 +1,6 @@
 # 특수문자 명칭
 
-- ` : GRAVE ACCENT
+- ` `` ` : GRAVE ACCENT
 - `~` : TILDE
 - `!`: EXCLAMATION (MARK)
 - `@` : (COMMERCIAL) AT
