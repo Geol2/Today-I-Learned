@@ -1,0 +1,34 @@
+# 특수문자 명칭
+
+- ` : GRAVE ACCENT
+- `~` : TILDE
+- `!`: EXCLAMATION (MARK)
+- `@` : (COMMERCIAL) AT
+- `#` : NUMBER (SIGN)
+- `$` : DOLLAR (SIGN)
+- `%` : PERCENT (SIGN)
+- `^` : CIRCUMFLEX (ACCENT)
+- `&` : AMPERSAND
+- `*` : ASTERISK
+- `(` : LEFT PARENTHESIS
+- `)` : RIGHT PARENTHESIS
+- `-` : HYPHEN 또는 MINUS (SIGN)
+- `_` : LOW LINE
+- `=` : EQUALS (SIGN)
+- `+` : PLUS (SIGN)
+- `[` : LEFT SQUARE BRACKET
+- `]` : RIGHT SQUARE BRACKET
+- `{` : LEFT CURLY BRACKET
+- `}` : RIGHT CURLY BRACKET
+- `;` : SEMICOLON
+- `:` : COLON
+- `'` : APOSTROPHE
+- `"` : QUOTATION MARK
+- `\` : REVERSE SOLIDUS 또는 BACK SLASH
+- `|` : VERTICAL LINE
+- `,` : COMMA
+- `.` : FULL STOP 또는 PERIOD
+- `<` : LESS-THAN (SIGN)
+- `>` : GREATER-THAN (SIGN)
+- `/` : SOLIDUS 또는 SLASH
+- `?` : QUESTION (MARK)
