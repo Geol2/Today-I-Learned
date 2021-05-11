@@ -39,6 +39,10 @@
 - [sort()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/sort.md)
 - [substr()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/substr.md)
 
+### Jquery
+
+- [ajax](https://github.com/Geol2/Today-I-Learned/blob/main/Jquery/ajax.md)
+
 # C++
 
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
