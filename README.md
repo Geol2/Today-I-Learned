@@ -23,6 +23,7 @@
 - [PHPMailer](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/email.md)
 - [Check Validation](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/validation.md)
 - [**use**, **namespace** Keyword](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/use_namespace.md)
+- [CURL](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/curl.md)
 - [**autoload**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/autoload.md)
 - [PHP **External Library runtime**](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/runtime.md)
 
@@ -37,6 +38,10 @@
 
 - [sort()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/sort.md)
 - [substr()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/substr.md)
+
+### Jquery
+
+- [ajax](https://github.com/Geol2/Today-I-Learned/blob/main/Jquery/ajax.md)
 
 # C++
 
