@@ -17,7 +17,7 @@ static public function getInstance($type = null) {
         if($type === "ko") {
             return new Korean();
         } else if($type === "en") {   
-            return new Korean();
+            return new English();
         }
     }
 }
