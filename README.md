@@ -48,6 +48,12 @@
 - [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
 - [next_permutation()](https://github.com/Geol2/Today-I-Learned/blob/main/C++/next_permutation.md)
 
+# JAVA
+
+- [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)
+- [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/getter&setter.md)
+- [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Map.md)
+
 # Network
 
 - [성공과 실패를 결정하는 1% 네트워크 원리 - HTTP Request Message](https://github.com/Geol2/Today-I-Learned/blob/main/Network/HttpRequestMessage.md)
