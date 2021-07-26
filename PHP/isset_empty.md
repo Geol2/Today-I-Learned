@@ -65,6 +65,7 @@ $var is either 0, empty, or not set at all$var is set even though it is empty
 
 - example 2.
 ```php
+<?php
 $testCase = array(
     1 => '',
     2 => "",
@@ -82,7 +83,14 @@ foreach ($testCase as $k => $v) {
         echo "<br> $k => $v is empty";
     }
 }
-?>
+
+echo "<br>";
+
+foreach ($testCase as $k => $v) {
+    if( isset($v) ) {
+        echo "<br> $k => $v is isset";
+    }
+}
 ```
 
 - Output
@@ -90,9 +98,19 @@ foreach ($testCase as $k => $v) {
 1 => is empty
 2 => is empty
 3 => is empty
+Notice: Array to string conversion in .\index.php on line 16
 4 =>Array is empty
 5 => is empty
 6 => is empty
 7 => 0 is empty
 8 => 0 is empty
+
+1 => is isset
+2 => is isset
+Notice: Array to string conversion in .\index.php on line 24
+
+4 => Array is isset
+5 => is isset
+7 => 0 is isset
+8 => 0 is isset
 ```
