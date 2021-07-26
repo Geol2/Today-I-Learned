@@ -92,5 +92,5 @@
 
 # Voca
 
-- [브룩스의 법칙](https://github.com/Geol2/Today-I-Learned/blob/main/Devel_VOCA/brooksLaw.md)
-- [특수문자 명칭](https://github.com/Geol2/Today-I-Learned/blob/main/Devel_VOCA/special_charset.md)
+- [브룩스의 법칙](https://github.com/Geol2/Today-I-Learned/blob/main/Voca/BrooksLaw.md)
+- [특수문자 명칭](https://github.com/Geol2/Today-I-Learned/blob/main/Voca/special_charset.md)
