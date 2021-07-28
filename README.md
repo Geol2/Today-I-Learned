@@ -49,7 +49,7 @@
 - [next_permutation()](https://github.com/Geol2/Today-I-Learned/blob/main/C++/next_permutation.md)
 
 # python
-- [Built-in function](https://github.com/Geol2/Today-I-Learned/blob/main/pthon/Built_in_function.md)
+- [Built-in function](https://github.com/Geol2/Today-I-Learned/blob/main/python/Built_in_function.md)
 
 # JAVA
 
