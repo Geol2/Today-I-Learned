@@ -54,7 +54,7 @@
 # JAVA
 
 - [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)
-- [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/getter&setter.md)
+- [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
 - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Map.md)
 
 # Network
