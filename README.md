@@ -64,7 +64,7 @@
 - [성공과 실패를 결정하는 1% 네트워크 원리 - ProtocolStack.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_4_ProtocolStack.md)
 
 # Database
-
+- [CASE expression](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Case.md)
 - [Transaction](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
 - [Join](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Join.md)
 - [Order By 및 쿼리문장순서](https://github.com/Geol2/Today-I-Learned/blob/main/Database/OrderBy.md)
