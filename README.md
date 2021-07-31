@@ -40,7 +40,6 @@
 - [substr()](https://github.com/Geol2/Today-I-Learned/blob/main/Javascript/substr.md)
 
 ### Jquery
-
 - [ajax](https://github.com/Geol2/Today-I-Learned/blob/main/Jquery/ajax.md)
 
 # C++
@@ -52,13 +51,13 @@
 - [Built-in function](https://github.com/Geol2/Today-I-Learned/blob/main/python/Built_in_function.md)
 
 # JAVA
-
-- [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)
-- [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
-- [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Map.md)
+- [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)  
+  ## Basic  
+  - [final_static](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/final_static.md)  
+  - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)  
+  - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Map.md)  
 
 # Network
-
 - [성공과 실패를 결정하는 1% 네트워크 원리 - HTTP Request Message.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_1_HttpRequestMessage.md)
 - [성공과 실패를 결정하는 1% 네트워크 원리 - Search the IP address of the web server to the DNS server.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_2_Search_the_IP_address.md)
 - [성공과 실패를 결정하는 1% 네트워크 원리 - DNS servers all over the world are in solidarity.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_3_DNS_server_all_over_the_world.md)
