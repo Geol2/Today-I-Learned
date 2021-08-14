@@ -89,6 +89,9 @@
 
 - [regex](https://github.com/Geol2/Today-I-Learned/blob/main/Reg/Reg.md)
 
+# Book
+
+- [웹 개발자를 위한 대규모 서비스를 지탱하는 기술](https://github.com/Geol2/Today-I-Learned/blob/main/BookReview/LargeServiceTech.md)
 # Voca
 
 - [브룩스의 법칙](https://github.com/Geol2/Today-I-Learned/blob/main/Voca/BrooksLaw.md)
