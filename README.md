@@ -30,13 +30,12 @@
 
 ### DesignPattern
 
-#### SingletonPattern
+- SingletonPattern
 
-- [singleton](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/SingletonPattern/SingletonPattern.md)
+  - [singleton](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/SingletonPattern/SingletonPattern.md)
 
-#### FactoryPattern
-
-- [factory](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/FactoryPattern/FactoryPattern.md)
+- FactoryPattern
+  - [factory](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/FactoryPattern/FactoryPattern.md)
 
 ### CodeIgniter 3, 4
 
