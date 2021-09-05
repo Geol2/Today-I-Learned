@@ -9,8 +9,16 @@ System.out.printf("");
 ```java
 import java.util.*;
 
-Scanner scanner = new Scanner(System.in); // Scanner 객체를 생성.
+Scanner sc = new Scanner(System.in);
 
-String input = scanner.nextLine(); // 입력받은 내용을 input에 저장.
-int num = Integer.parseInt(input); // 입력받은 내용을 int로 변환.
+String input = sc.nextLine();
+int convInt = Integer.parseInt(input);
+float convFloat = Float.parseFloat(input);
+double convDouble = Double.parseDouble(input);
+
+System.out.println(input);
+System.out.println(convInt);
+System.out.println(convFloat);
+System.out.println(convDouble);
+
 ```
