@@ -18,6 +18,63 @@
 
 ---
 
+# PSR-4 : autoloader
+
+- 이 PSR은 분리된 Class 파일을 불러와서 사용하기 위해 namespace 설정에 대한 내용입니다.
+- 정규화된 클래스의 형식은 다음과 같음.
+
+```
+\<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
+```
+
+- 예제
+
+  - Class 이름 : \Zend\Acl
+  - namespace 이름 : Zend
+  - 기본 디렉토리 : /usr/includes/Zend/
+  - 결과 파일 경로 : /usr/includes/Zend/Acl.php
+
+- composer.json 파일을 이용해서도 가능.
+
+```json
+"autoload": {
+    "psr-4": {
+      "Config\\" : "config/"
+    }
+  }
+```
+
+```php
+// DatabaseConfig.php
+namespace Config;
+class DatabaseConfig
+{
+  //...
+}
+```
+
+```php
+// App.php
+namespace Config;
+class App
+{
+  //...
+}
+```
+
+```php
+//index.php
+use Config\DatabaseConfig as DatabaseConfig;
+use Config\App as App;
+
+$app = new App();
+//...
+$config = new DatabaseConfig('development', 'RedBeanPHP');
+//...
+```
+
+- `Config\\`는 네임스페이스가 되며, `config/`는 설정된 폴더명이 된다.
+
 # PSR-12 : extended-coding-style-guide
 
 - 요약된 PSR-1 규칙을 모두 따라야 한다.
