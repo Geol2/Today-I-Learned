@@ -22,13 +22,14 @@ AddHandler application/x-httpd-php .php
 ```
 
 - Windows 서비스 등록 관련
-  - 컴퓨터\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PHP8FastCGI
-
-```
-AppDirectory : D:\LocalServer\php-8.0.10-Win32-vs16-x64
-Application : D:\LocalServer\php-8.0.10-Win32-vs16-x64\php-cgi.exe
-AppPrameters : -b 127.0.0.1:9000 -c D:\LocalServer\php-8.0.10-Win32-vs16-x64\php.ini
-```
+  - `nssm` 다운로드 > `cmd` 터미널 `nssm` 경로로 이동 후 > `nssm.exe install PHP8FastCGI`
+  ```
+  AppDirectory : D:\LocalServer\php-8.0.10-Win32-vs16-x64
+  Application : D:\LocalServer\php-8.0.10-Win32-vs16-x64\php-cgi.exe
+  AppPrameters : -b 127.0.0.1:9000 -c D:\LocalServer\php-8.0.10-Win32-vs16-x64\php.ini
+  ```
+  - 수정 및 삭제 참고
+    - `regdit` > 컴퓨터\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\{이름}
 
 ## PHP 8.0
 
