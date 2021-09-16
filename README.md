@@ -68,8 +68,8 @@
   ## Basic
   - [final_static](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/final_static.md)
   - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
-  - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Map.md)
-
+  - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
+  - [Math](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Math.md)
 # Network
 
 - [성공과 실패를 결정하는 1% 네트워크 원리 - HTTP Request Message.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_1_HttpRequestMessage.md)
