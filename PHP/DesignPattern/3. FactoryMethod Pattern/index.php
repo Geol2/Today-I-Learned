@@ -52,5 +52,3 @@ $fac->create();
 
 $fac = new ImProductCreate();
 $fac->create();
-
-//ProductCreate::create();
