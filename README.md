@@ -66,7 +66,8 @@
 
 - [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)
   ## Basic
-  - [Environment](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/environment.md)
+  - [Class](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/1.%20Class%20Method.md)
+  - [Environment](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/2.%20Environment.md)
   - [final_static](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/final_static.md)
   - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
   - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
