@@ -1,4 +1,4 @@
-# environtment
+# Environment
   - javac.exe : 자바 컴파일러, 자바소스코드를 바이트코드로 컴파일.
   - java.exe : 자바 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행.
   - javap.exe : 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환.
