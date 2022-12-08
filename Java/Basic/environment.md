@@ -32,7 +32,7 @@
   }
   ```
 
-  2. `cmd` 경로를 탐색 후, `javac Profile.java` 입력
+  2. `cmd`에서 경로를 탐색 후, 작성된 파일에서 `javac Profile.java` 입력
   3. `Profile.class` 생성을 확인
   4. `java Profile` 입력 후, 출력되는 문자들을 확인
 
