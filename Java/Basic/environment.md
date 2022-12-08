@@ -7,12 +7,26 @@
   - jar.exe : 압축 프로그램, 클래스파일과 프로그램의 실행에 관련된 파일을 하나의 jar파일로 압축하거나 압축해제한다.
 
 ## JDK과 JRE
-  - JDK : 자바개발도구
-  - JRE : 자바실행환경
-  - JDK : JRE + 개발에 필요한 실행파일 (javac.exe)
-  - JRE : JVM + 클래스라이브러리 (java API)
+  - JDK(자바 개발 도구) : JRE + 개발에 필요한 실행파일 (javac.exe)
+  - JRE(자바 실행 환경) : JVM + 클래스 라이브러리 (java API)
+
+## API (Application Programming Interface)
+  - 컴퓨터나 프로그램 사이의 연결
 
 ## 간단한 프로그램 작성으로 컴파일 이해하기
-  - Hello.java --( javac.exe 컴파일 )--> Hello.class --( java.exe 실행 )--> 출력
+  1. Profile.java 작성
 
-  
+  ```java
+  public class Profile {
+    public static void main(String args[]) {
+      System.out.println("My name is InGeol Beak");
+      System.out.println("My age is 29");
+    }
+  }
+  ```
+
+  2. `cmd` 경로를 탐색 후, `javac Profile.java` 입력
+  3. `Profile.class` 생성을 확인
+  4. `java Profile` 입력 후, 출력되는 문자들을 확인
+
+  - 리턴 타입, 함수 이름, 함수 내용은 반드시 필요하다.
