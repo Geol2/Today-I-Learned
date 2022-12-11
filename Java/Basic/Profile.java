@@ -19,8 +19,10 @@ class Profile {
     }
 
     public static void main(String[] args) {
+        String name = "Min";
+
         Profile profile = new Profile();
-        profile.setName("Min");
+        profile.setName(name);
         profile.setAge(20);
 
         profile.printName();
