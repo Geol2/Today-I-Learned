@@ -1,3 +1,4 @@
+package ProfilePrint;
 public class ProfilePrint {
     private byte age;
     private String name;

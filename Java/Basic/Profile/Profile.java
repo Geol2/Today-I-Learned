@@ -1,3 +1,4 @@
+package Profile;
 class Profile {
     String name;
     int age;
