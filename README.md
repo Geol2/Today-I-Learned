@@ -70,6 +70,7 @@
   - [static](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/3-1.%20static.md)
   - [Variable](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/4.%20Variable.md)
   - [Operator](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/5.%20Operator.md)
+  - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/6.%20Control-Flow-Statement.md)
   - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
   - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
   - [Math](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Math.md)
