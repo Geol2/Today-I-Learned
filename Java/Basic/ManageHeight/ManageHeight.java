@@ -1,4 +1,6 @@
-class ManageHeight {
+package ManageHeight;
+
+public class ManageHeight {
     
     public int[][] gradeHeights;
 
