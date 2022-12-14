@@ -1,4 +1,5 @@
-package SalaryManager;
+package SalaryManager; // 필요에 따라 주석
+
 public class SalaryManager {
 
     double incomeTax = 12.5;       // 근로소득세
