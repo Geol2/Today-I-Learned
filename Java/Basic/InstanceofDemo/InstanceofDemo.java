@@ -1,4 +1,5 @@
-package InstanceofDemo;
+package InstanceofDemo; // 필요에 따라 주석
+
 class Parent {}
 class Child extends Parent implements MyInterface {}
 interface MyInterface {}

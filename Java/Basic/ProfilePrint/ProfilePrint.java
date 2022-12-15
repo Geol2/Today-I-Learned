@@ -1,4 +1,5 @@
-package ProfilePrint;
+package ProfilePrint; // 필요에 따라 주석
+
 public class ProfilePrint {
     private byte age;
     private String name;
