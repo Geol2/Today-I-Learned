@@ -1,4 +1,3 @@
-package SalaryManager; // 필요에 따라 주석
 
 public class SalaryManager {
 

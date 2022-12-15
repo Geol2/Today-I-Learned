@@ -1,4 +1,3 @@
-package Profile; // 필요에 따라 주석
 
 class Profile {
     String name;

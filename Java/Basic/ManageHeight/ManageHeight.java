@@ -1,4 +1,3 @@
-package ManageHeight; // 필요에 따라 주석
 
 public class ManageHeight {
     

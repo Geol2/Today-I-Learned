@@ -1,4 +1,3 @@
-package StudentManager; // 필요에 따라 주석
 
 class Student {
     String name, address, phone, email;
