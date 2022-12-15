@@ -72,6 +72,7 @@
   - [Operator](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/5.%20Operator.md)
   - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/6.%20Control-Flow-Statement.md)
   - [Array](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/7.%20Array.md)
+  - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/9.%20Inheritance.md)
   - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
   - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
   - [Math](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Math.md)
