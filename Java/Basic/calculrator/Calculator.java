@@ -1,13 +1,13 @@
 public class Calculator {
     public static void main(String args[]) {
         Calculator calc = new Calculator();
-        try{
+        //try{
             calc.printDivide(1, 2);
             calc.printDivide(1, 0);
-        } catch (ZeroException ze) {
-            ze.printStackTrace();
+        //} catch (ZeroException ze) {
+        //    ze.printStackTrace();
             // System.out.println( ze.getMessage() );
-        }
+        //}
     }
 
     public void printDivide(double d1, double d2) throws ZeroException {
@@ -20,7 +20,7 @@ public class Calculator {
     }
 }
 
-class ZeroException extends Exception {
+class ZeroException extends RuntimeException {
     public ZeroException() {
         super();
     }
