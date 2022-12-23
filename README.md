@@ -73,10 +73,17 @@
   - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/6.%20Control-Flow-Statement.md)
   - [Array](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/7.%20Array.md)
   - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/9.%20Inheritance.md)
-  - [getter&setter](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/getter&setter.md)
-  - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
+  - [Abtract, Implement, Enum](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/10.%20Abstract%2C%20Implement%2C%20Enum.md)
+  - [Exception](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/11.%20Exception.md)
+  - [String](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/12.%20String.md)
+  - [Nested Class](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/13.%20Nested%20Class.md)
+  - [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/14.%20Annotation.md)
   - [Math](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Math.md)
-  - [Annotation](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Annotation.md)
+
+  ## expert
+  - [JVM](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/01.%20JVM.md)
+  - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/Map.md)
+  
 # Network
 
 - [성공과 실패를 결정하는 1% 네트워크 원리 - HTTP Request Message.](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1_1_HttpRequestMessage.md)
