@@ -2,6 +2,12 @@
 
 키에 대한 해시 값을 사용하여 값을 저장하고 조회하며, 키-값 쌍의 개수에 따라 동적으로 크기가 증가하는 연관 배열
 
+## 동작
+
+해시를 이용하므로 최적화 시, `O(1)`로 사용할 수 있음
+
+`put()` 호출을 하면 `hashCode()`를 이용해 결정된 버킷에 저장된 후, 버킷 내에 `equals()` 여부를 판단하게 되므로 `hashCode()`와 `equals()`를 재정의하는 것은 중요하다.
+
 ```java
 public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializable
 ```
@@ -11,6 +17,12 @@ Map, Cloneable, Serializable 인터페이스를 구현하고 Collections 중 하
 성능에 미치는 두 가지
 - 초기용량(initialCapacity) : 해시 테이블의 버킷 수(16 개), 초기용량은 해시 테이블이 생성된 시점
 - 부하율 : 기본 부하 계수(0.75)와 공간 비용으로 적절하게 할당됨, 값이 클수록 공간 오버헤드는 줄어들지만 조회 비용은 증가함
+
+```java
+// 해시맵 내부
+static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // 16
+static final float DEFAULT_LOAD_FACTOR = 0.75f; // 75%
+```
 
 동일한 HashCode()로 많은 키를 사용하는 것은 해시 테이블의 성능을 저하시킨다
 
