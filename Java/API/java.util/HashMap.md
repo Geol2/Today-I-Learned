@@ -18,7 +18,7 @@ Map, Cloneable, Serializable 인터페이스를 구현하고 Collections 중 하
 
 `Map m = Collections.synchronizedMap(new HashMap(...));`
 
-`Iterator`의 `fail-fast`에 대한 동작에 대한 설명이 있다.
+`Iterator`의 `fail-fast`에 대한 설명이 있는데 `ConcurrentModificationException` 라는 예외에 의존해서 작성하는 것을 금지한다.
 
 ## 메소드
 
