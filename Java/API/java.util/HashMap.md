@@ -1,0 +1,41 @@
+# HashMap
+
+키에 대한 해시 값을 사용하여 값을 저장하고 조회하며, 키-값 쌍의 개수에 따라 동적으로 크기가 증가하는 연관 배열
+
+```java
+public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializable
+```
+
+Map, Cloneable, Serializable 인터페이스를 구현하고 Collections 중 하나이고 null 값과 키를 허용한다
+
+성능에 미치는 두 가지
+- 초기용량(initialCapacity) : 해시 테이블의 버킷 수(16 개), 초기용량은 해시 테이블이 생성된 시점
+- 부하율 : 기본 부하 계수(0.75)와 공간 비용으로 적절하게 할당됨, 값이 클수록 공간 오버헤드는 줄어들지만 조회 비용은 증가함
+
+동일한 HashCode()로 많은 키를 사용하는 것은 해시 테이블의 성능을 저하시킨다
+
+`synchronized` 되지 않으며(Not Thread-safe), 여러 스레드가 동시에 접근하고 수정하는 경우 외부에서 해주어야 한다
+
+`Map m = Collections.synchronizedMap(new HashMap(...));`
+
+## 메소드
+
+자주 쓰일 것 같은 메소드들만 추렸다.
+
+- size() : int
+- isEmpty() : 없을 시 true
+- containsKey(Object key) : 있다면 true, 없다면 false
+- containsValue(Object value) : 있다면 true, 없다면 false
+- get(Object key) : null | 지정된 키가 매핑되는 값
+- put(K key, V value) : null | 키와 관련된 이전 값
+- replace(K key, V oldValue, V newValue) : 교체되었다면 true
+- remove(Object key) : null | 키와 관련된 이전 값
+- clear()
+
+더 자세한 건 API 문서에 있다.
+
+-----
+- [Oracle 문서 - HashMap](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/HashMap.html)
+- [HashMap vs HashTable 블로그 작성](https://geol2.github.io/til/HashMap_HashTable/)
+- 로드 팩터(load factor) : 해시 테이블이 얼마나 가득찰 수 있는지를 측정한 것, 가득 차 있다면 용량이 자동으로 증가함
+- 오버헤드(overhead) : 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간 · 메모리
