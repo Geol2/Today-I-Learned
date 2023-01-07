@@ -75,6 +75,7 @@
   - [HashMap](https://github.com/Geol2/Today-I-Learned/blob/main/Java/API/java.util/HashMap.md)
   - [HashTable](https://github.com/Geol2/Today-I-Learned/blob/main/Java/API/HashTable.md)
   
+  
   ## Basic
   - [Class](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/1.%20Class%20Method.md)
   - [Environment](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/2.%20Environment.md)

@@ -18,6 +18,8 @@ Map, Cloneable, Serializable 인터페이스를 구현하고 Collections 중 하
 
 `Map m = Collections.synchronizedMap(new HashMap(...));`
 
+`Iterator`의 `fail-fast`에 대한 동작에 대한 설명이 있다.
+
 ## 메소드
 
 자주 쓰일 것 같은 메소드들만 추렸다.
