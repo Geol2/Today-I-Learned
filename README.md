@@ -3,8 +3,10 @@
 ## Category
 
 - [PHP](#PHP)
-- [C++](#C++)
-- [Algorithm_Math](#Algorithm_Math)
+- [C++](#c)
+- [JAVA](#JAVA)
+- [WEB](#WEB)
+- [Algorithm/Math](#Algorithm/Math)
 - [Refactoring](#Refactoring)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
@@ -100,6 +102,10 @@
   ## Expert
   - [JVM](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/01.%20JVM.md)
   - [Runtime-Area](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/02.%20Runtime-Area.md)
+
+# WEB
+-[Basic](https://github.com/Geol2/Today-I-Learned/blob/main/Web/Basic.md)
+-[WAS](https://github.com/Geol2/Today-I-Learned/blob/main/Web/WAS.md)
   
 # Network
 
