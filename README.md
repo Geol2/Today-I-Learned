@@ -104,8 +104,8 @@
   - [Runtime-Area](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/02.%20Runtime-Area.md)
 
 # WEB
--[Basic](https://github.com/Geol2/Today-I-Learned/blob/main/Web/Basic.md)
--[WAS](https://github.com/Geol2/Today-I-Learned/blob/main/Web/WAS.md)
+- [Basic](https://github.com/Geol2/Today-I-Learned/blob/main/Web/Basic.md)
+- [WAS](https://github.com/Geol2/Today-I-Learned/blob/main/Web/WAS.md)
   
 # Network
 
