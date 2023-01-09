@@ -24,11 +24,62 @@ static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // 16
 static final float DEFAULT_LOAD_FACTOR = 0.75f; // 75%
 ```
 
+```java
+public V put(K key, V value) {
+    return putVal(hash(key), key, value, false, true);
+}
+
+final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
+                boolean evict) {
+    Node<K,V>[] tab; Node<K,V> p; int n, i;
+    if ((tab = table) == null || (n = tab.length) == 0)
+        n = (tab = resize()).length;
+    if ((p = tab[i = (n - 1) & hash]) == null)
+        tab[i] = newNode(hash, key, value, null);
+    else {
+        Node<K,V> e; K k;
+        if (p.hash == hash &&
+            ((k = p.key) == key || (key != null && key.equals(k))))
+            e = p;
+        else if (p instanceof TreeNode)
+            e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
+        else {
+            for (int binCount = 0; ; ++binCount) {
+                if ((e = p.next) == null) {
+                    p.next = newNode(hash, key, value, null);
+                    if (binCount >= TREEIFY_THRESHOLD - 1) // -1 for 1st
+                        treeifyBin(tab, hash);
+                    break;
+                }
+                if (e.hash == hash &&
+                    ((k = e.key) == key || (key != null && key.equals(k))))
+                    break;
+                p = e;
+            }
+        }
+        if (e != null) { // existing mapping for key
+            V oldValue = e.value;
+            if (!onlyIfAbsent || oldValue == null)
+                e.value = value;
+            afterNodeAccess(e);
+            return oldValue;
+        }
+    }
+    ++modCount;
+    if (++size > threshold)
+        resize();
+    afterNodeInsertion(evict);
+    return null;
+}
+```
+
 동일한 HashCode()로 많은 키를 사용하는 것은 해시 테이블의 성능을 저하시킨다
 
 `synchronized` 되지 않으며(Not Thread-safe), 여러 스레드가 동시에 접근하고 수정하는 경우 외부에서 해주어야 한다
 
 `Map m = Collections.synchronizedMap(new HashMap(...));`
+
+또한, `ConcurrentHashMap`을 사용해서 스레드에 안전하게도 만들 수 있다.
 
 `Iterator`의 `fail-fast`에 대한 설명이 있는데 `ConcurrentModificationException` 라는 예외에 의존해서 작성하는 것을 금지한다.
 
