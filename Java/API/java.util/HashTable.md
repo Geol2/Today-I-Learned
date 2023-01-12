@@ -16,6 +16,8 @@ public class Hashtable<K,V> extends Dictionary<K,V> implements Map<K,V>, Cloneab
 
 put(), get(), remove()에 `syncronized`가 있어 쓰레드에 안전하다.
 
+멀티 쓰레드 환경에서 사용하기에도 살짝 느리다는 단점이 있다
+
 ```java
 public synchronized V put(K key, V value) {
     // Make sure the value is not null
