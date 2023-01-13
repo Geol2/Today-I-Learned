@@ -6,7 +6,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V> implements Concurre
 
 동시성을 지원하는 해시 테이블
 
-Thread-safe 가 전체적이지 않은대 `ConcurrentHashMap`은 읽기 작업에는 여러 스레드가 동시에 읽을 수 있지만, 쓰기 작업에는 특정 버킷에 락을 사용한다는 것
+Thread-safe 가 전체적이지 않은데, `ConcurrentHashMap`은 읽기 작업에는 여러 스레드가 동시에 읽을 수 있지만, 쓰기 작업에는 특정 버킷에 동기화를 사용한다는 것
 
 get() 메소드에는 없지만, put() 메소드 중간에는 synchronized 키워드가 있어 Thread-safe 하다.
 
