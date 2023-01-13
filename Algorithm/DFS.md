@@ -48,7 +48,7 @@ public class Main {
 
   public static void dfs(int x) {
     visited[x] = true;
-    System.out.prinln(x + " ");
+    System.out.println(x + " ");
     for(int i = 0; i < graph.get(x).size(); i++) {
       int y = graph.get(x).get(i);
       if(!visited[y]) dfs(y);
