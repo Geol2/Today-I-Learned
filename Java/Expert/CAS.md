@@ -101,7 +101,7 @@ public final class Unsafe {
 
 -----
 
-Atomic : 더 나눌수 없는 행위를 말하거나 최소단위의 명령어, 연산으로의 원자성이란 말이 있다고 한다
+Atomic : 더 나눌수 없는 행위를 말하거나 최소단위의 명령어, 연산. 데이터베이스에선 트랜잭션은 모두 성공하거나 또는 실패하는 데이터베이스 운용의 집합
 
 [java.util.concurrent.atomic 문서](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/atomic/AtomicInteger.html)
 
