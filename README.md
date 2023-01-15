@@ -98,6 +98,9 @@
   - [Collection](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/17.%20Collection.md)
   - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/18.%20Map.md)
   - [Thread](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/19.%20Thread.md)
+  - [Garbage Collection](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/20.%20Garbage%20Collection.md)
+  - [JAVA 7, 8](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/21.%20Java-change.md)
+  - [volatile](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/22.%20volatile.md)
 
   ## Expert
   - [JVM](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/01.%20JVM.md)
