@@ -61,16 +61,16 @@ request, response, session, application, page 등 다수 기본 객체가 존재
 
 ### request
 
-- getRemoteAddr() : 웹 서버에 연결한 클라이언트의 IP 주소를 구한다.
-- getContentLength() : 클라이언트가 전송한 요청 정보의 길이를 구한다, 길이를 모르면 -1이다.
-- getCharacterEncoding() : 클라이언트가 요청 정보를 전송할 때 사용한 캐릭터의 인코딩을 구한다.
-- getContentType() : 클라이언트가 요청 정보를 전송할 때 사용한 컨텐트 타입을 구한다.
-- getProtocol() : 클라이언트가 요청한 프로토콜을 구함
-- getMethod() : 웹 브라우저가 정보를 전송할 때, 사용한 방식을 구함
-- getRequestURI() : 웹 브라우저가 요청한 URL에서 경로를 구함
-- getContextPath() : 웹 애플리케이션의 컨텍스트 경로
-- getServerName() : 연결할 때 사용한 서버 이름을 구함
-- getServerPort() : 서버가 실행중인 포트를 구함
+- `getRemoteAddr()` : 웹 서버에 연결한 클라이언트의 IP 주소를 구한다.
+- `getContentLength()` : 클라이언트가 전송한 요청 정보의 길이를 구한다, 길이를 모르면 -1이다.
+- `getCharacterEncoding()` : 클라이언트가 요청 정보를 전송할 때 사용한 캐릭터의 인코딩을 구한다.
+- `getContentType()` : 클라이언트가 요청 정보를 전송할 때 사용한 컨텐트 타입을 구한다.
+- `getProtocol()` : 클라이언트가 요청한 프로토콜을 구함
+- `getMethod()` : 웹 브라우저가 정보를 전송할 때, 사용한 방식을 구함
+- `getRequestURI()` : 웹 브라우저가 요청한 URL에서 경로를 구함
+- `getContextPath()` : 웹 애플리케이션의 컨텍스트 경로
+- `getServerName()` : 연결할 때 사용한 서버 이름을 구함
+- `getServerPort()` : 서버가 실행중인 포트를 구함
 
 ### response
 
