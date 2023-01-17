@@ -118,4 +118,10 @@ try {
 - Commons DBCP API 가 사용하는 Commons Pool API의 jar 파일
 - 로그기록에 사용하는 Commins Logging API 관련 jar 파일
 
-####
+#### 커넥션 풀 초기화 서블릿 클래스 작성
+
+#### 커넥션 풀 초기화 서블릿 설정
+
+#### 커넥션 풀로부터 커넥션 사용하기
+
+#### 커넥션 풀 속성 설명
