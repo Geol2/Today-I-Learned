@@ -20,8 +20,10 @@ Optional은 객체를 감싸는 객체이므로 기존 객체를 더해 추가�
 
 ## orElse와 orElseGet
 
+lazy evaluation
+
 - `orElse(T other)`
-  - 존재하면 값을 반환하고 그렇지 않으면 `other`를 반환함
+  - 존재하는 경우 값을 반환하고 그렇지 않으면 `other`를 반환함
   - `other`의 값이 없으면 null 값 일 수 있다
 
 - `orElseGet(Supplier<? extends T> other)`
