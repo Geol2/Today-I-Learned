@@ -28,7 +28,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
 
 읽기 작업보다는 쓰기 작업에 성능이 중요한 상황에서 쓰면 적합하다고 한다
 
-다음 put()의 내부 코드이다
+다음 put()의 내부 코드에서 putVal()를 호출한다.
 
 ```java
 final V putVal(K key, V value, boolean onlyIfAbsent) {
@@ -151,7 +151,7 @@ else {
 }
 ```
 
-이미 노드가 존재하는 경우 실행되는 코드인데, 새로운 노드로 교체를 하기도하고 체이닝에 추가하기도 하고 트리에 추가하기도 한다.
+이미 노드가 존재하는 경우 실행되는 코드인데, 락을 걸고 있으며 새로운 노드로 교체를 하기도하고 체이닝에 추가하기도 하고 트리에 추가하기도 한다.
 
 ----
 
