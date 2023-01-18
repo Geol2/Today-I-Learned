@@ -20,7 +20,7 @@ null 을 허용한다
 
 동기화를 허용하지 않는다
 
-동기화 시, `Collections.synchronizedList()`를 사용해서 래팽해야 한다
+동기화 시, `Collections.synchronizedList()`를 사용해서 래핑해야 한다
 
 Collections 의 종류 중 하나이다
 
