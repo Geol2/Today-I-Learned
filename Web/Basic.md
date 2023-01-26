@@ -18,6 +18,10 @@ https://www.google.com/search?q=was+tomcat&oq=was+tomcat
 
 # 웹 서버와 웹 브라우저
 
+웹서버?
+
+- HTTP 기반으로 동작하며 보통 정적 리소스를 제공
+
 ```
 https://www.google.com/search?q=was+tomcat&oq=was+tomcat
 ```
