@@ -6,7 +6,7 @@
 
 로그인한 사용자의 정보를 유지하기 위한 목적으로 세션을 사용한다
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/session.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/session1.png" />
 
 ## 1.1 세션 생성하기
 
