@@ -1,3 +1,11 @@
+# Web 내부에서의 JSP 동작 방법
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/basic-mov.png">
+
+1. 브라우저에서 요청
+2. WAS는 jsp 파일을 실행함
+3. 브라우저에게 HTTP 응답을 전송함
+
 # JSP에서 HTML 문서를 생성하는 기본 코드 구조
 
 ```jsp
