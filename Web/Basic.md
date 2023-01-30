@@ -1,3 +1,13 @@
+# Internet
+
+전 세계 컴퓨터들을 하나로 연결하는 거대한 컴퓨터 통신망을 의미
+
+# Web
+
+인터넷에 연결된 사용자들이 서로의 정보를 공유할 수 있는 공간을 의미
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/http.png" />
+
 # URL
 
 ```
@@ -33,9 +43,17 @@ https://www.google.com/search?q=was+tomcat&oq=was+tomcat
 
 한 개의 컴퓨터는 여러 포트가 존재해서 여러 프로그램을 실행할 수 있도록 할 수 있다.
 
-# HTTP
+# HTTP (HyperText Transfer Protocol)
 
 웹 브라우저와 웹 서버가 HTML 뿐만 아닌 이미지, 동영상, XML 문서 등 다양한 데이터를 주고받을 때 사용하는 일종의 규칙
+
+## 특징
+
+TCP/IP를 이용하는 응용 계층에서 사용되는 프로토콜이다
+
+Http는 연결 상태를 유지하지 않는 비연결성인 특징이 있다 (stateless = 무상태성)
+
+요청/응답 방식으로 동작한다
 
 ```
 https://www.google.com/search?q=was+tomcat&oq=was+tomcat
@@ -60,6 +78,12 @@ https://www.google.com/search?q=was+tomcat&oq=was+tomcat
 정적 자원은 동일한 결과가 나타난다고 해서 정적 자원 및 정적 페이지라고 불린다.
 
 동적 자원은 시간이나 특정 조건에 따라 응답 데이터가 달라지는 것을 동적 자원 및 동적 페이지라고 한다.
+
+# HTTPS (HyperText Transfer Protocol Over Secure Socket Layer)
+
+HTTP에서 통신의 인증과 암호화를 위해 만들어졌다
+
+SSL, TLS 프로토콜을 통해 세션 데이터를 암호화하고 기본 포트는 443
 
 -----
 
