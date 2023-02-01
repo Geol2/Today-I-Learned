@@ -18,6 +18,8 @@
 
 ## 쿠키 만들기
 
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/cookies.png" />
+
 Set-Cookie HTTP 응답 헤더는 서버로부터 사용자 에이전트로 전송됩니다. 간단한 쿠키는 다음과 같이 설정될 수 있다
 
 ```
@@ -44,6 +46,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 ```
 
 PHP, NodeJS ... 서버측 애플리케이션에서 Set-Cookie헤더를 사용해서 만들 수도 있다
+
 
 ## 세션쿠키
 
