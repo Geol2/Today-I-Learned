@@ -85,6 +85,35 @@ HTTP에서 통신의 인증과 암호화를 위해 만들어졌다
 
 SSL, TLS 프로토콜을 통해 세션 데이터를 암호화하고 기본 포트는 443
 
+구글 검색에 용이하기 위해서..
+
+## SSL (Secure Sockets Layer)
+
+NetScape 에서 웹 서버와 브라우저 간의 보안을 위해 만든 프로토콜
+
+공개키/개인키 대칭키 기반으로 사용함
+
+### 대칭키
+
+동일한 키로 암호화와 복호화를 수행하는 방법
+
+암호화에 이용된 키를 가지고 있다면, 해당 데이터를 쉽게 복호화할 수 있다
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/key1.png" />
+
+키가 탈취되면 문제가 될 수 있다
+
+### 공개키 (=비대칭키)
+
+서로 다른 키로 암호화와 복호화를 수행하는 방식
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/key2.png" />
+
+### 공개키/개인키 대칭키 방식
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/key3.png" />
+
+
 -----
 
 DNS (Domain Name Server) : 도메인 이름을 IP주소를 변환할 때 사용되는 것
