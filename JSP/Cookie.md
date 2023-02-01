@@ -18,7 +18,7 @@
 
 ## 쿠키 만들기
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Web/images/cookie.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/cookie.png" />
 
 Set-Cookie HTTP 응답 헤더는 서버로부터 사용자 에이전트로 전송됩니다. 간단한 쿠키는 다음과 같이 설정될 수 있다
 
