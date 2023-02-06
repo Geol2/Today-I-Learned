@@ -86,7 +86,7 @@
   - [Operator](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/5.%20Operator.md)
   - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/6.%20Control-Flow-Statement.md)
   - [Array](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/7.%20Array.md)
-  - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/9.%20Inheritance.md)
+  - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/9.%20Extends.md)
   - [Abtract, Implement, Enum](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/10.%20Abstract%2C%20Implement%2C%20Enum.md)
   - [Exception](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/11.%20Exception.md)
   - [String](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/12.%20String.md)
