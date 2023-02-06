@@ -78,15 +78,14 @@
   
   
   ## Basic
-  - [Class](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/1.%20Class%20Method.md)
-  - [Environment](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/2.%20Environment.md)
-  - [Object](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/3.%20Object.md)
-  - [static](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/3-1.%20static.md)
-  - [Variable](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/4.%20Variable.md)
-  - [Operator](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/5.%20Operator.md)
-  - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/6.%20Control-Flow-Statement.md)
-  - [Array](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/7.%20Array.md)
-  - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/9.%20Extends.md)
+  - [Class](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/01.%20Class%20Method.md)
+  - [Environment](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/02.%20Environment.md)
+  - [Object](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/03.%20Object.md)
+  - [Variable](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/04.%20Variable.md)
+  - [Operator](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/05.%20Operator.md)
+  - [Control-Flow](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/06.%20Control-Flow-Statement.md)
+  - [Array](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/07.%20Array.md)
+  - [Inheritance](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/09.%20Extends.md)
   - [Abtract, Implement, Enum](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/10.%20Abstract%2C%20Implement%2C%20Enum.md)
   - [Exception](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/11.%20Exception.md)
   - [String](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/12.%20String.md)
@@ -98,8 +97,9 @@
   - [Map](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/18.%20Map.md)
   - [Thread](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/19.%20Thread.md)
   - [Garbage Collection](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/20.%20Garbage%20Collection.md)
-  - [JAVA 7, 8](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/21.%20Java-change.md)
+  - [JAVA 7, 8 변경점](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/21.%20Java-change.md)
   - [volatile](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/22.%20volatile.md)
+  - [IO](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Basic/23.%20IO.md)
 
   ## Expert
   - [JVM](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/01.%20JVM.md)
