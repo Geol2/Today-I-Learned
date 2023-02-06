@@ -82,7 +82,7 @@ is able to (인터페이스)
 
 그래서 하위 객체가 상위 객체인 척 할 수 있다
 
-## DIP (의존 역전 원칙 - Dependency Inversion Principle )
+## DIP (의존 역전 원칙 - Dependency Inversion Principle)
 
 ```
 고차원 모듈은 저차원 모듈에 의존하면 안된다. 이 두 모듈 모두 다른 추상화된 것에 의존해야 한다.
@@ -94,3 +94,6 @@ is able to (인터페이스)
 == 자신보다 변하기 쉬운 것에 의존하지 마라
 ```
 
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-DIP-1.png" />
+
+자동차가 스노우타이어(자주 변경되는 객체라고 가정)에 직접 의존하기보단 위처럼 인터페이스에만 의존하게 해서 변경되어도 영향을 받지 않는 형태로 구성하는 것이 좋다
