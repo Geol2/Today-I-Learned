@@ -6,7 +6,6 @@
 - [C++](#c)
 - [JAVA](#JAVA)
 - [WEB](#WEB)
-- [Algorithm/Math](#Algorithm/Math)
 - [Refactoring](#Refactoring)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
@@ -123,14 +122,6 @@
 - [Transaction](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
 - [Join](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Join.md)
 - [Order By 및 쿼리문장순서](https://github.com/Geol2/Today-I-Learned/blob/main/Database/OrderBy.md)
-
-# Algorithm/Math
-
-- [문자열 Find the number of alphabets](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/number_of_alphabets.md)
-- [에라토스테네스의 체](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/Prime.md)
-- [투 포인터 알고리즘](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/toPointer.md)
-- [그리디(탐욕법)](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/Greedy.md)
-- [구현](https://github.com/Geol2/Today-I-Learned/blob/main/Algorithm_Math/implementation.md)
 
 # Security
 
