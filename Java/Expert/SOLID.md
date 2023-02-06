@@ -6,11 +6,11 @@
 어떤 클래스를 변경해야 하는 이유는 오직 하나뿐이어야 한다
 ```
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-SRP-1.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-SRP-1.png" />
 
 남자의 역할과 책임이 너무 많아서 단일 책임 원칙으로 변경시켜보자
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-SRP-2.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-SRP-2.png" />
 
 하나의 클래스를 네 개로 쪼개게 되면서 단일 책임 원칙을 지키고 있다
 
@@ -50,11 +50,11 @@ class 강아지 {
 == 자신의 확장에 대해선 열려있고 주변의 변화에 대해서는 닫혀있어야 한다
 ```
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-OCP-1.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-OCP-1.png" />
 
 위의 그림에서 소나타가 추가되었을 때, 소나타를 사용할지 마티즈를 사용할지 선택도 해야되고 메서드 별로도 상황이 달라서 운전자가 운전에 대해 영향을 받아야만 한다
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-OCP-2.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-OCP-2.png" />
 
 자동차의 입장에서 자신의 확장은 열려있고 운전자의 입장에서는 변화에 폐쇄되어 있게 하는 것이 좋다
 
@@ -74,7 +74,7 @@ is able to (인터페이스)
 클라이언트는 자신이 사용하지 않는 메서드에 의존 관계를 맺으면 안된다
 ```
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-ISP-2.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-ISP-2.png" />
 
 인터페이스 분할 원칙을 이야기할 때, 인터페이스를 최소주의 원칙이있는데 인터페이스를 통해 메서드를 외부에 제공할 땐 최소한의 메서드만 제공하라는 뜻이다
 
@@ -94,6 +94,6 @@ is able to (인터페이스)
 == 자신보다 변하기 쉬운 것에 의존하지 마라
 ```
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JAVA/images/solid-DIP-1.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/solid-DIP-1.png" />
 
 자동차가 스노우타이어(자주 변경되는 객체라고 가정)에 직접 의존하기보단 위처럼 인터페이스에만 의존하게 해서 변경되어도 영향을 받지 않는 형태로 구성하는 것이 좋다
