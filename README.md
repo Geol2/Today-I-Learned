@@ -6,10 +6,8 @@
 - [C++](#c)
 - [JAVA](#JAVA)
 - [WEB](#WEB)
-- [Refactoring](#Refactoring)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
-- [Voca](#Voca)
 
 ---
 
@@ -32,9 +30,7 @@
 ### DesignPattern
 
 - SingletonPattern
-
   - [singleton](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/SingletonPattern/SingletonPattern.md)
-
 - FactoryPattern
   - [factory](https://github.com/Geol2/Today-I-Learned/blob/main/PHP/DesignPattern/FactoryPattern/FactoryPattern.md)
 
@@ -122,24 +118,3 @@
 - [Transaction](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Transaction.md)
 - [Join](https://github.com/Geol2/Today-I-Learned/blob/main/Database/Join.md)
 - [Order By 및 쿼리문장순서](https://github.com/Geol2/Today-I-Learned/blob/main/Database/OrderBy.md)
-
-# Security
-
-- [XSS]()
-
-# Refactoring
-
-- [CodeReview](https://github.com/Geol2/Today-I-Learned/blob/main/Refactoring/CodeReview.md)
-
-# Reglar Expression (정규식)
-
-- [regex](https://github.com/Geol2/Today-I-Learned/blob/main/Reg/Reg.md)
-
-# Book
-
-- [웹 개발자를 위한 대규모 서비스를 지탱하는 기술](https://github.com/Geol2/Today-I-Learned/blob/main/BookReview/LargeServiceTech.md)
-
-# Voca
-
-- [브룩스의 법칙](https://github.com/Geol2/Today-I-Learned/blob/main/Voca/BrooksLaw.md)
-- [특수문자 명칭](https://github.com/Geol2/Today-I-Learned/blob/main/Voca/special_charset.md)
