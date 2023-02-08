@@ -105,12 +105,6 @@
 - [Basic](https://github.com/Geol2/Today-I-Learned/blob/main/Web/Basic.md)
 - [HTTP Request Message](https://github.com/Geol2/Today-I-Learned/blob/main/Web/HttpRequestMessage.md)
 - [WAS](https://github.com/Geol2/Today-I-Learned/blob/main/Web/WAS.md)
-  
-# Network
-
-- [웹 서버의 IP주소를 찾아 DNS 서버를 검색](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/1.%20Search_the_IP_address.md)
-- [전 세계 DNS 서버가 연대함](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/2.%20DNS_server_all_over_the_world.md)
-- [프로토콜 스택](https://github.com/Geol2/Today-I-Learned/blob/main/Network/1_웹브라우저메시지/3.%20ProtocolStack.md)
 
 # Database
 
