@@ -1,60 +1,4 @@
----
-title: "SpringBoot"
-categories:
-  - SpringBoot
-tags:
-  - SpringBoot
-last_modified_at: 2022-04-10T09:00:00-14:00:00
----
-
-# 스프링부트 설치
-
-## 스프링, 스프링부트
-
-- 의존성 관리를 자동화
-- [스프링부트 Initailizer](https://start.spring.io/)
-  - `gradle` 사용
-
-<img src="/assets/images/spring/SpringBoot(1).png">
-
-- 의존성 패키지 설치 (Spring Web, Thymeleaf)
-- 추가 `JPA`의 사용이 필요할 시, `build.gradle`에 `dependencies` 아래에 추가한다.
-
-```markdown
-dependencies {
-    //...
-    
-    implementation org.springframework.boot:spring-boot-starter-data-jpa
-    
-    //...
-}
-```
-
-- `src/main/resources/templates/index.html` 파일 생성
-
-<img src="/assets/images/spring/SpringBoot(2).png">
-
-- `public static void main()` 함수 옆에 실행버튼 클릭
-
-<img src="/assets/images/spring/SpringBoot(3).png"><br>
-
-- 실행됨을 확인함
-
-<img src="/assets/images/spring/SpringBoot(4).png">
-
-- `localhost:8181` 확인
-
----
-
 # @MVC
-
-
-## 결론
-
-<img src="/assets/images/jjal/force(1).jpeg">
-
-**아 스프링 개신기하다..**<br>
-**뭐가 이렇게 기능이 ~~졸라~~ 다양함**<br>
 
 ## 기능
 
@@ -182,87 +126,6 @@ public interface xxRepository extends JpaRepository<xx, String> {
 
 ---
 
-
-# IOC, DI
-
-# 빈 Bean
-- 스프링 IoC 컨테이너가 관리하는 객체
-- 컨테이너 내부에 만든 객체
-
-# 제어의 역전 IoC
-
-컨테이너가 코드 대신 오브젝트에 대한 제어권을 갖고 있음.<br>
-스프링 컨테이너를 IoC 컨테이너라고 부른다.<br>
-IoC를 담당하는 컨테이너를 빈 팩토리(BeanFactory 인터페이스)나 어플리케이션 컨텍스트(Application Context 인터페이스)라고도 불린다.<br>
-
-```java
-public interface ApplicationContext extends ListableBeanFactory, HirarchiBeanFactory, MessageSource, ApplicationEventPublicsher, ResourcePatternResolver { ... }
-```
-
-- 이 인터페이스를 구현한 클래스의 오브젝트가 스프링 컨테이너 또는 Ioc 컨테이너
-
-## Ioc 컨테이너를 이용한 애플리케이션 만들기
-
-### Ioc 컨테이너
-Bean을 만들고 엮어주며 제공한다.<br>
-Bean의 의존성을 관리해주며 `IntelliJ`에서 콩이 붙어있다!<br>
-컴포넌트 스캐닝이 붙어있는 친구들이다. `ApplicationContext (BeanFactory)`<br>
-<br>
-IoC 컨테이너가 관리하는 빈은 오브젝트 단위<br>
-직접사용하는 일은 드물 것 같다<br>
-
-```java
-StaticApplicationContext ac = new StaticApplicationContext();
-// 빈 컨테이너 생성함
-
-ac.registerSigleton("hello1", Hello.class);
-// 빈 싱글톤 등록
-
-Hello hello1 = ac.getBean("hello1", Hello.class);
-assertTrue(hello1, is( notNullValue() ) );
-// 등록된 hello1 빈을 요청하고 NULL인지를 확인한다.
-
-```
-
-## IoC/DI 를 위한 빈 등록 방법
-
-1. XML : `<bean>` 태그
-2. XML : 네임스페이스와 전용 태그
-3. 자동인식 : 어노테이션과 빈 스캐너
-    - 일일이 XML에 선언하는 것은 꽤나 번거로운 작업일 수 있다. 빈 스캐닝이라는 것을 사용해서 자동인식 빈 등록 기능이 있다.
-    - `@Repositoy` : 데이터 액세스 계층(DAO) 및 레포지토리 클래스
-    - `@Service` : 서비스 계층의 클래스
-    - `@Controller` : 웹 요청을 처리하는 컨트롤러 빈으로 선정
-4. 자바코드에 의한 빈등록 : @Configuration 클래스의 @Bean 메소드
-
-- 여러방법이 있으므로 팀의 문화와 정책에 맞는 적절한 조합을 일관성 있게 사용하는 것이 좋을 것 같다.
-
-## 빈 오브젝트 상의 DI를 위한 의존관계 작성
-
-1. XML : `<property>`, `<construcotr-arg>`
-2. XML : 자동와이어링
-3. XML : 네임스페이스와 전용태그
-4. 어노테이션 : `@Resource`
-5. 어노테이션 : `@AutoWired`/`@Inject`
-
-- @AutoWired/@Inject
-  - `생성자`
-  - `필드`
-  - `Setter`
-
-```java
-public class VasSqlService implements SqlService {
-    protected SqlReader sqlReader;
-    protected SqlRegistry sqlRegistry;
-
-    @Autowired
-    public BasSqlService(SqlReader sqlReader, SqlRegistry sqlRegistry) {
-        this.sqlReader = sqlReader;
-        this.sqlRegistry = sqlRegistry;
-    }
-}
-```
-
 ## Properties 값 설정
 
 1. XML : <property> 전용 태그
@@ -301,14 +164,6 @@ public class Config {
     }
 }
 ```
-
-
-- 간단한 정리일 뿐이라서 더 상세하게 공부가 필요한 개념이다.
-
-
-# ❗
-
-- 스프링을 이번에 처음 사용하게 되서 공부하게 되었지만, 예전부터 옆에서 많이 들어봤었고 이론책에서의  개념이나 어떤 핵심적인 역할을 하는지 정리할 필요가 있을 것 같아서 적어놓는다.
 
 ---
 
