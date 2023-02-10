@@ -9,7 +9,7 @@
 특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환한다
 ```
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/adapter-1.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/Pattern/adapter-1.png" />
 
 클라이언트는 구현이 아닌 타깃 인터페이스만 보게 하고
 
