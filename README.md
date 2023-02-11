@@ -102,9 +102,9 @@
   - [Runtime-Area](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Expert/02.%20Runtime-Area.md)
 
   ## Spring
-    - [IoC](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/01.%20IoC.md)
-    - [Bean](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/02.%20Bean.md)
-    - [DI](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/03.%20DI.md)
+  - [IoC](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/01.%20IoC.md)
+  - [Bean](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/02.%20Bean.md)
+  - [DI](https://github.com/Geol2/Today-I-Learned/blob/main/Java/Spring/03.%20DI.md)
 
 # WEB
 - [Basic](https://github.com/Geol2/Today-I-Learned/blob/main/Web/Basic.md)
