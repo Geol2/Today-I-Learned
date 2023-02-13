@@ -1,6 +1,6 @@
 # JDBC
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/jsp-struct.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/jdbc-struct.png" />
 
 JSP를 포함한 자바 애플리케이션에 데이터베이스를 사용할 떄에는 데이터베이스 종류에 상관없이 JDBC API를 이용해서 데이터베이스에 접근한다.
 
@@ -108,7 +108,7 @@ pstmt.executeUpdate();
 흔히 PreparedStatement를 사용한다고 한다
 
 1. 값 변환을 자동으로 하기 위해서 (SQL Injection 방어)
-2. 간결한 코드를 위해사
+2. 간결한 코드를 위해서
 
 DBMS는 내부적으로 4가지 과정(parse, bind, excute, fetch)를 거쳐 결과를 출력한다
 
@@ -194,7 +194,7 @@ public class MySQLDriverLoader extends HttpServlet {
 
 ## JDBC 트랜잭션 처리
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/transection.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/transection.png" />
 
 - 트랜잭션 구현하는 방법
   1. JDBC의 오토 커밋 모드를 false로 지정하는 방법
@@ -225,7 +225,7 @@ try {
 
 ## 커넥션 풀
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/connection-pool.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/connection-pool.png" />
 
 - 커넥션 풀의 특징
   - 풀 속에 미리 커넥션이 생성되어 있기 때문에 커넥션을 생성하는 유지비용이 덜 듬
