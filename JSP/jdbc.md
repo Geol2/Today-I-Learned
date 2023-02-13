@@ -9,11 +9,138 @@ JDBC API에는 DBMS(MySQL, Oracle 등등)에 알맞는 JDBC 드라이버만 있�
 ## 실행 순서
 
 1. JDBC 드라이버 로딩
+```java
+Class.forName("com.mysql.jdbc.Driver")
+```
+
 2. 데이터베이스 커넥션 구함
+```java
+String jdbcDriver = "jdbc:mysql://localhost:3306/chap14?" +
+                    "useUnicode=true&characterEncoding=utf8";
+String dbUser = "jspexam";
+String dbPass = "jsppw";
+
+String query = "SELECT * FROM MEMBER order by MEMBERID";
+
+Connection conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
+```
+
 3. 쿼리 실행을 위한 Statement 객체 생성
+```java
+Statement stmt = conn.createStatement();
+```
+
 4. 쿼리 실행
+```java
+ResultSet rs = stmt.executeQuery(query);
+```
+
 5. Statement 종료
+```java
+finally {
+    if(rs != null) try { rs.close(); } catch(SQLException ex) {}
+    if(stmt != null) try { stmt.close(); } catch(SQLException ex) {}
+    //...
+}
+```
+
 6. 데이터베이스 커넥션 종료
+```java
+finally {
+    // ...
+    if(conn != null) try { conn.close(); } catch(SQLException ex) {}
+}
+```
+
+5번과 6번에서 java 7의 `try-with-resource`에 대해 공부를 했었으므로 다음과 같이 나타낼 수도 있다
+
+```java
+try (Connection conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
+     Statement stmt = conn.createStatement();
+     ResultSet rs = stmt.executeQuery(query)) {
+        while(rs.next()) {
+            //...
+        }
+} catch(Exception e) {
+    // ...
+}
+```
+
+## Statement를 사용한 쿼리 실행
+
+Connection 객체를 생성한 후, Connection 객체에서 Statement를 생성하고 createStatement() 메소드를 사용해서 쿼리를 실행할 수 있다.
+
+```java
+ResultSet executeQuery(String query) // SELECT 쿼리를 실행
+int executeUpdate(String query)      // INSERT, UPDATE, DELETE 쿼리를 실행
+```
+
+## PreparedStatement를 사용한 쿼리 실행
+
+1. Connection 객체를 생성한 후, Connection 객체에서 prepareStatement() 메소드를 사용해서 PreapredStatement를 생성한다
+
+2. PareparedStatement의 set 메소드를 사용해서 필요한 값 지정
+
+3. PreparedStatement의 executeQuery() 또는 executeUpdate() 메소드를 사용해서 쿼리를 실행
+
+4. PreparedStatement를 수동으로 닫거나 AutoCloseable 을 사용해서 닫기
+
+```java
+String memberId = request.getParameter("memberID");
+String password = request.getParameter("password");
+String name = request.getParameter("name");
+String email = request.getParameter("email");
+
+String query = "INSERT INTO MEMBER(MEMBERID, NAME, EMAIL) VALUES (?, ?, ?)";
+
+Connection conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
+PreparedStatement pstmt = conn.prepareStatement(query);
+pstmt.setString(1, memberID);
+pstmt.setString(2, password);
+pstmt.setString(3, name);
+pstmt.setString(4, email);
+
+pstmt.executeUpdate();
+```
+
+## Statement VS PreparedStatement
+
+흔히 PreparedStatement를 사용한다고 한다
+
+1. 값 변환을 자동으로 하기 위해서 (SQL Injection 방어)
+2. 간결한 코드를 위해사
+
+DBMS는 내부적으로 4가지 과정(parse, bind, excute, fetch)를 거쳐 결과를 출력한다
+
+Statement를 사용하여 쿼리를 입력 시, 매번 parse부터 fetch까지 모든 과정을 수행한다
+
+PreparedStatement를 사용하면 parse 과정을 최초 1번 수행 후 메모리에 저장해두고 필요할 때마다 사용하며 자주 변경되는 부분을 변수로 선언해두고 매번 다른 값을 대입하여 사용한다
+
+1. Statement를 이용
+
+```java
+String query = "SELECT * FROM users WHERE a = '" + str + "'";
+// SELECT * FROM users WHERE a = 'a' OR 1 = 1#'
+```
+
+`str` 변수에 `a' OR 1 = 1#'` 을 준다면 입력이 모두 참으로 되서 전체 데이터가 출력된다
+
+getConnection() 메소드의 파라미터 내에 allowMultiQueries 옵션을 true로 지정하는 것은 좋지 않다
+
+Statement를 이용해서 `str` 변수에 `a' OR 1 = 1; SELECT * FROM users;`를 대입해보면 전체 데이터가 출력되고 `;` 뒤를 조작해서 유저를 보거나 수정/삭제를 진행할 수 있다
+
+2. PreparedStatement를 이용
+
+```java
+String query = "SELECT * FROM users WHERE a = ?";
+
+pstmt.setString(1, str);
+// SELECT * FROM users WHERE a = 'a\' or 1 = 1#'
+```
+
+`str` 변수에 `a' OR 1 = 1#'` 을 준다면 `'`문자를 이스케이핑하여 SQL Injection 방어가 이루어질 수 있다
+
+작은 따옴표가 필요한 상황이여도 적절하게 작은 따옴표를 두 번으로 나타낼 수 있다
 
 ## DBMS와의 통신을 위한 JDBC 드라이버
 
