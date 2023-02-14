@@ -1,6 +1,6 @@
 # JDBC
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/jdbc-struct.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/jdbc-struct.png" />
 
 JSP를 포함한 자바 애플리케이션에 데이터베이스를 사용할 떄에는 데이터베이스 종류에 상관없이 JDBC API를 이용해서 데이터베이스에 접근한다.
 
@@ -194,7 +194,7 @@ public class MySQLDriverLoader extends HttpServlet {
 
 ## JDBC 트랜잭션 처리
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/transection.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/transection.png" />
 
 - 트랜잭션 구현하는 방법
   1. JDBC의 오토 커밋 모드를 false로 지정하는 방법
@@ -225,7 +225,7 @@ try {
 
 ## 커넥션 풀
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/connection-pool.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/connection-pool.png" />
 
 - 커넥션 풀의 특징
   - 풀 속에 미리 커넥션이 생성되어 있기 때문에 커넥션을 생성하는 유지비용이 덜 듬

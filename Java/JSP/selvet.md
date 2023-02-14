@@ -109,11 +109,11 @@ public class NowServlet extends HttpServlet {
 
 ## 1.5 서블릿 로딩과 초기화
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/servlet-init-loading.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/servlet-init-loading.png" />
 
 초기화 작업은 웹 컨테이너를 처음 구동하는 시점에서 하는 것이 좋고 이를 위한 설정은 `<load-on-startup>` 태그의 내용을 넣어 해주거나 `@WebServlet(urlPatterns = "/now", loadOnStartUp = 1)` 로 로딩값을 어노테이션에 넣어주기도 한다
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/servlet-init.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/servlet-init.png" />
 
 ```java
 public class DBCPInit extends HttpServlet {

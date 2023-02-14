@@ -1,6 +1,6 @@
 # Web 내부에서의 JSP 동작 방법
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/JSP/images/basic-mov.png">
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/JSP/images/basic-mov.png">
 
 1. 브라우저에서 요청
 2. WAS는 jsp 파일을 실행함
