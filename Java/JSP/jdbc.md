@@ -346,6 +346,12 @@ Apache Commons DBCP, Tomcat DBCP, HikariCP, Oracle UCP 등등 있다
 
 사용할 서버 수를 고려해서 DBCP의 Max pool Size 를 결정하면 된다
 
+## Connection Pool 의 크기가 크면 클수록 좋을까?
+
+Connection Pool 의 크기가 크다고 좋지만은 않다
+
+Thread의 개수보다 커넥션 풀의 크기가 크다면 남는 커넥션이 생기므로 메모리 낭비가 발생된다고 한다
+
 ------
 
 - [D2-NAVER Commons DBCP 이해하기](https://d2.naver.com/helloworld/5102792)
