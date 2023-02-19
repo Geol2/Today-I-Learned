@@ -42,7 +42,7 @@
 
 더 빠르고 더 주기적으로 빌드하고 테스트하고 출시하는 것을 목표로 하고 지속적 배포가 이루어지려면 테스트 자동화가 제대로 설계되어 있어야 한다
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/DevOps/images/cd.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/DevOps/images/cd.png?raw=true" />
 
 CI/CD 툴로 Jenkins, Github Action, GitLab 등 툴이 존재한다
 
