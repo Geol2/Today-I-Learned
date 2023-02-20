@@ -20,7 +20,7 @@
 
 ### CPU, I/O bound
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/CS/images/thread.png?raw=true" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/CS/images/thread-1.png?raw=true" />
 
 #### CPU bound 애플리케이션
 
