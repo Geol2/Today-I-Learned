@@ -42,7 +42,7 @@ class 강아지 {
 }
 ```
 
-## OCP (개방 폐쇄 원칙 - Open Closed Principle)
+## OCP (개방 폐쇄 원칙 - Open Closed Principle)<sup>*
 
 ```
 소프트웨어 엔티티는 확장에 대해서는 열려 있어야 하지만 변경에 대해서는 닫혀 있어야 한다
@@ -82,7 +82,7 @@ is able to (인터페이스)
 
 그래서 하위 객체가 상위 객체인 척 할 수 있다
 
-## DIP (의존 역전 원칙 - Dependency Inversion Principle)
+## DIP (의존 역전 원칙 - Dependency Inversion Principle)<sup>*
 
 ```
 고차원 모듈은 저차원 모듈에 의존하면 안된다. 이 두 모듈 모두 다른 추상화된 것에 의존해야 한다.
