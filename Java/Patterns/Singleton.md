@@ -95,7 +95,7 @@ public class ChcolateBoiler {
 
 1번 스레드와 2번 스레드가 있다고 가정하고 아래의 코드를 실행하면
 
-
+`getInstace()` 메소드 호출 과정에서 두 스레드가 경합하는 과정이 발생된다
 
 ```java
 ChcolateBoiler boiler = ChocolateBoiler.getInstance();
