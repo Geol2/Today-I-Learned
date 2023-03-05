@@ -1,4 +1,4 @@
-# Today-I-Learned-Coding
+# Today-I-Learned
 
 ## Category
 
