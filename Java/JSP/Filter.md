@@ -50,3 +50,12 @@ public class FirstFilter implements Filter {
 
 ### 필터 설정하기 : @WebFilter 어노테이션
 
+### 필터가 사용되기 좋은 곳
+
+1. 인증
+2. 로깅
+3. 이미지 변환
+4. 데이터 압축
+5. 인코딩 / 디코딩
+6. 암호화
+7. 캐싱
