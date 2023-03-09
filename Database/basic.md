@@ -19,7 +19,7 @@ DBMS 클라이언트 : 데이터베이스를 사용하는 애플리케이션
 
 ## 테이블과 레코드
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/basic.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/table.png?raw=true" />
 
 ### 스키마
 
@@ -31,5 +31,5 @@ DBMS 클라이언트 : 데이터베이스를 사용하는 애플리케이션
 
 ## 일반적인 순서
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/normal-order.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/normal-order.png?raw=true" />
 
