@@ -36,3 +36,33 @@ select ename, regexp_replace(sal, '[0-3]', '*') from emp;
 /* Oracle */
 select ename, rpad(sal, 10, '*') from emp; 
 ```
+
+## next_day(sysdate, '요일')
+
+오늘부터 돌아올 요일을 출력
+
+## last_day('년도/월/일')
+
+마지막 날의 날짜를 출력
+
+```sql
+/* Oracle - 몇 일이 남았는지 확인하고 싶을 때 */
+SELECT last_day(sysdate) - sysdate from emp;
+```
+
+## to_char(날짜 컬럼명, '날짜 포맷')
+
+- 년도 : RRRR, YYYY, RR, YY
+- 달 : MON, YY
+- 일 : DD
+- 요일 : DAY, DY
+
+## to_date('날짜', '작성한 날짜의 형식')
+
+날짜 포맷으로 출력해줌
+
+해당 날짜까지 포함하기 위해서 `to_date('날짜', '작성한 날짜의 형식') + 1` 까지 나타낼 수 있다
+
+## explain for 쿼리 질의문
+
+실행 계획을 출력해준다
