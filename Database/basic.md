@@ -33,3 +33,9 @@ DBMS 클라이언트 : 데이터베이스를 사용하는 애플리케이션
 
 <img src="https://github.com/Geol2/Today-I-Learned/blob/main/Database/images/normal-order.png?raw=true" />
 
+
+# 순서
+
+- from &rightarrow; where &rightarrow; group by &rightarrow; having &rightarrow; order by &rightarrow; select 순서로 실행된다
+
+- select &rightarrow; from &rightarrow; where &rightarrow; group by &rightarrow; having &rightarrow; order by 순서로 작성한다
