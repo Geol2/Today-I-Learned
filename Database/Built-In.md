@@ -158,6 +158,7 @@ SELECT ename, deptno, sal, RANK() OVER (ORDER BY sal desc) FROM emp WHERE deptno
 ```sql
 SELECT ename, deptno, sal, DENSE_RANK() OVER (ORDER BY sal desc) FROM emp WHERE deptno = 20;
 ```
+1등이 두 명이면, 그 다음에 2등이 나오게 한다
 
 ## DENSE_RANK(기준값) WITHIN GROUP (ORDER BY 컬럼명 DESC)
 
@@ -217,4 +218,102 @@ FROM emp;
 ```
 
 ## ROW 를 COLUMN 으로 출력하기 (PIVOT)
+
+- pivot (그룹함수 for 기준 컬럼 in (데이터1, 데이터2, ...))
+
+```sql
+/* Oracle */
+SELECT * FROM (SELECT deptno, sal FROM emp) /* 서브쿼리 */
+PIVOT ( sum(sal) for deptno in (10, 20, 30));
+```
+
+## SUM(컬럼명) OVER(ORDER BY 기준 컬럼)
+
+- 누적합을 보여주는 함수
+
+`SUM() OVER(ORDER BY 컬럼명 ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)` 
+
+```sql
+/* Oracle */
+SELECT empno, ename, sum(sal) over() FROM emp;
+```
+
+## RATIO_TO_REPORT(컬럼명) OVER()
+
+```sql
+SELECT empno, ename, sal, ratio_to_report(sal) over()
+FROM emp
+WHERE deptno = 20;
+```
+
+## ROLLUP(컬럼명)
+
+- 가장 하단 컬럼에 모두 더한 값을 출력해주는 함수
+
+```sql
+SELECT job, sum(sal) FROM emp
+GROUP BY rollup(job);
+```
+
+## CUBE(컬럼명)
+
+- 가장 상단 컬럼에 모두 더한 값을 출력해주는 함수
+
+```sql
+SELECT job, sum(sal)
+FROM emp
+GROUP BY cube(job);
+
+/* 년도별 사원들의 총 월급 */
+SELECT to_char(hiredate, 'RRRR'), sum(sal)
+FROM emp
+GROUP BY to_char(hiredate, 'RRRR');
+```
+
+## GROUP BY GROUPING SETS((기준 컬럼1), (기준 컬럼2), ())
+
+- 기준 컬럼들이 동시에 묶인 결과를 출력할 지 단일 결과를 출력할지를 결정함
+- () 을 추가하면 전체에 대해서 더한 결과값이 출력됨
+
+```sql
+SELECT deptno, sum(sal)
+FROM emp
+GROUP BY GROUPING SETS((deptno), (job), ());
+```
+
+## ROW_NUMBER()
+
+- 넘버링을 해주는 통계함수
+
+```sql
+SELECT empno, ename, sal,
+       rank() over (order by sal desc) as rank,
+       dense_rank() over (order by sal desc) as dense_rank,
+       row_number() over (order by sal desc) as 번호
+FROM emp
+WHERE deptno = 20;
+```
+
+## ROWNUM()
+
+- 필요한 상위 행들만을 출력하고자 할 때, 사용하는 함수
+
+```sql
+/* Oracle */
+SELECT rownum, empno, ename, job, sal
+FROM emp
+WHERE rownum <= 5;
+```
+
+## simple TOP-n Quries
+
+- 출력되는 행을 제한할 수 있다
+
+```sql
+/* Oracle - 맨 위의 4개의 행만 출력하고자 함 */
+SELECT empno, ename, job, sal
+FROM emp
+ORDER BY sal DESC
+FETCH 4 ROWS ONLY;
+```
 
