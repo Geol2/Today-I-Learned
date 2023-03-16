@@ -31,7 +31,7 @@ WebHook이란, 특정 이벤트가 발생하였을 때 타 서비스나 응용�
 
 ## Jenkins Plugin Install
 
-대쉬보드 > 젠킨스 관리 > 플러그인 관리 > `GitHub Integration Plugin` 검색 > 설치
+대쉬보드 > 젠킨스 관리 > 플러그인 관리 > `GitHub Integration Plugin` 검색 > 설치 > Download now and install after restart
 
 이렇게 하면 Github WebHook 설정에서 초록색 체크로 활성화가 된다
 
@@ -119,7 +119,7 @@ stage('Build') 안의 steps 내에 쉘 명령어에서 다음과 같은 문제�
 
 1. [msg-1]: sudo를 사용하지 않은 문제로 나타났다, sudo를 사용 시 msg-2에러가 발생했다
 2. [msg-2]: 원격에서 sudo 를 이용하면서 패스워드를 물으면서 타이핑을 할 수 없는 문제로 젠킨스 서버에 비밀번호를 묻지 않게 아래과 같이 할 수 있게끔 만들어주었는데, 보안상 이슈가 발생될지도 모른단 생각을 해보았다
-3. [msg-3]: 스크립트 내부에 `chmod +x gradlew`를 추가해서 실행할 수 있게끔 권한을 지정해주면서 해결하였다
+3. [msg-3]: 스크립트 내부에 `chmod +x gradlew` 를 추가해서 실행할 수 있게끔 권한을 지정해주면서 해결하였다
 
 #### 비빌번호 묻기 생략하기
 
