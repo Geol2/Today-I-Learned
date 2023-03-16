@@ -4,7 +4,7 @@
 
 ## 배포파일 만들어보기
 
-<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/Spring/deploy-1.png" />
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/Spring/deploy-1.png?raw=true" />
 
 인텔리제이에 Gradle 탭이 존재하는데 `bootJar > Run` 을 하면, `프로젝트 > build > libs > *-0.0.1-SNAPSHOT.jar` 이 있다
 
@@ -58,3 +58,10 @@ java -Dserver.port=80 -jar helpu-0.0.1-SNAPSHOT.jar
 ```
 
 `Hello World` 출력되면 성공!
+
+
+# Jenkins 서버 생성하기
+
+<img src="https://github.com/Geol2/Today-I-Learned/blob/main/Java/images/Project/naver-jenkins.png?raw=true" />
+
+public ip를 할당해주고 AGC에서 젠킨스가 사용될 포트 18080를 포워딩해주고 기다리면 된다

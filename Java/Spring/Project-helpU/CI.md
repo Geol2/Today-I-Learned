@@ -31,7 +31,7 @@ WebHook이란, 특정 이벤트가 발생하였을 때 타 서비스나 응용�
 
 ## Jenkins Plugin Install
 
-대쉬보드 > 젠킨스 관리 > 플러그인 관리 > `GitHub Integration Plugin` 검색 > 설치 > Download now and install after restart
+대쉬보드 > 젠킨스 관리 > 플러그인 관리 > `GitHub Integration Plugin` 검색 > 설치 > `Download now and install after restart` 를 해주었다
 
 이렇게 하면 Github WebHook 설정에서 초록색 체크로 활성화가 된다
 
