@@ -8,6 +8,20 @@
 
 - 선수 테이블과 팀 테이블이 존재한다면, 선수 테이블을 기준으로 필요한 데이터를 검색하고 이 데이터와 연관된 팀 테이블의 특정 행들을 찾아서 연결하는 것이 조인.
 
+1. 오라클 조인 문법
+    - EQUI JOIN
+    - NON EQUI JOIN
+    - OUTER JOIN
+    - SELF JOIN
+
+2. 1999 ANSI 조인 문법 (미국 국립 표준 협회)
+    - ON 절을 사용한 조인
+    - USING 절을 사용한 조인
+    - NATURAL JOIN
+    - OUTER JOIN
+    - FULL OUTER JOIN
+
+
 ## EQUI JOIN
 
 - 두 테이블 간에 칼럼 값들이 서로 정확하게 일치하는 경우에 사용되는 방법인데 PK <-> FK 의 관계로만 성립하는 것은 아니지만 기본적 기반을 가진다.
@@ -18,8 +32,7 @@ FROM 테이블1, 테이블2
 WHERE 테이블2.칼럼명 = 테이블1.칼럼명
 ```
 
-ANSI/SQL
-
+- ANSI/SQL
 ```SQL
 SELECT 테이블1.칼럼명, 테이블2.칼럼명, ...
 FROM 테이블1, 테이블2
@@ -133,6 +146,46 @@ WHERE A.SAL BETWEEN B.LOCAL AND B.HISAL;
 | SCOTT  | 3000 |   4   | 2001  | 3000  |
 |  KING  | 5000 |   5   | 3001  | 9999  |
 
+## OUTER JOIN
+
+- RIGHT OUTER JOIN
+
+```sql
+/* Oracle */
+SELECT 컬럼명1, ...
+FROM 테이블명1 AS 1, 테이블명2 AS 2
+WHERE 1.컬럼명 (+)= 2.컬럼명;
+
+SELECT 컬럼명1, ...
+FROM 테이블명1 AS 1 RIGHT OUTER JOIN 테이블명2 AS 2
+ON (1.컬럼명 = 2.컬럼명);
+```
+
+- LEFT OUTER JOIN
+
+```sql
+/* Oracle */
+SELECT 컬럼명1, ...
+FROM 테이블명1 AS 1, 테이블명2 AS 2
+WHERE 1.컬럼명 = 2.컬럼명 (+);
+
+SELECT 컬럼명1, ...
+FROM 테이블명1 AS 1 LEFT OUTER JOIN 테이블명2 AS 2
+ON (1.컬럼명 = 2.컬럼명);
+```
+
+## FULL OUTER JOIN
+
+```sql
+SELECT e.ename, e.job, e.sal, d.loc
+FROM emp e, dept d
+WHERE e.deptno = d.deptno (+);
+
+SELECT e.ename, e.job, e.sal, d.loc
+FROM emp e FULL OUTER JOIN dept d
+ON ( e.deptno = d.deptno); 
+```
+
 # INNER vs OUTER vs CROSS JOIN 비교
 
 - TAB1 (X)
@@ -197,3 +250,15 @@ SELECT X.KEY1, Y.KEY2
 ```
 
 - A-B, A-C, A-D, A-E, B-B, B-C, B-D, B-E, C-B, C-C, C-D, C-E
+
+## USING 절
+
+- 오라클에선 사용할 수 없음
+
+```sql
+/* ANSI */
+SELECT e.ename, e.job, e.sal, d.loc
+FROM emp e JOIN dept d
+USING ( deptno )
+WHERE e.job = 'SALESMAN';
+```

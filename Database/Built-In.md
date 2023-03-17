@@ -146,6 +146,8 @@ HAVING count(*) >= 3;
 
 # 데이터 분석 함수
 
+WHERE 절에 쓰일 수 없다
+
 ## RANK() OVER (ORDER BY 컬럼명 DESC)
 
 ```sql
