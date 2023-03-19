@@ -135,3 +135,29 @@ SELECT ename,
 FROM emp
 WHERE deptno = 20;
 ```
+
+## SELECT FOR UPDATE 절
+
+조회하는 동안 다른 누구도 데이터를 갱신할 수 없게 할 수 있다
+
+```sql
+/* 락을 걸면서 수행 */
+SELECT ename, sal, deptno
+FROM emp
+WHERE ename = 'JONES';
+FOR UPDATE;
+
+/* 락이 걸려서 다른 세션에서 수행할 수 없음 */
+UPDATE empp
+SET sal = 9000
+WHERE ename = 'JONES';
+```
+
+```sql
+/* 부서번호가 10번인 emp테이블의 데이터를 emp2 테이블에 넣는다 */
+INSERT INTO emp2 (empno, ename, sal, deptno)
+SELECT empno, ename, sal, deptno
+FROM emp
+WHERE deptno = 10;
+```
+
