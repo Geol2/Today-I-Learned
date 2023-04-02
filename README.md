@@ -2,14 +2,29 @@
 
 ## Category
 
-- [PHP](#PHP)
+- [CS](#CS)
 - [C++](#c)
+- [PHP](#PHP)
 - [JAVA](#JAVA)
 - [WEB](#WEB)
 - [Network](#Network)
 - [DATABASE](#DATABASE)
 
 ---
+
+# CS
+
+- [Core](https://github.com/Geol2/Today-I-Learned/blob/main/CS/Core.md)
+- [Process](https://github.com/Geol2/Today-I-Learned/blob/main/CS/Process.md)
+- [Thread](https://github.com/Geol2/Today-I-Learned/blob/main/CS/Thread.md)
+- [부동소수점](https://github.com/Geol2/Today-I-Learned/blob/main/CS/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90.md)
+- [Blocking vs Non-Blocking vs Syncronize vs Asyncronize](https://github.com/Geol2/Today-I-Learned/blob/main/CS/Blocking_Sync.md)
+
+# C++
+
+- [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
+- [next_permutation()](https://github.com/Geol2/Today-I-Learned/blob/main/C++/next_permutation.md)
+
 
 # PHP
 
@@ -49,11 +64,6 @@
 ### Jquery
 
 - [ajax](https://github.com/Geol2/Today-I-Learned/blob/main/Jquery/ajax.md)
-
-# C++
-
-- [ios::sync_with_stdio(false)](https://github.com/Geol2/Today-I-Learned/blob/main/C++/sync_with_stdio.md)
-- [next_permutation()](https://github.com/Geol2/Today-I-Learned/blob/main/C++/next_permutation.md)
 
 # python
 
