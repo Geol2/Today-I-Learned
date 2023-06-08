@@ -1,12 +1,3 @@
----
-title: "MYSQL"
-categories:
-  - MySQL
-tags:
-  - MySQL
-last_modified_at: 2022-09-23T21:00:00-22:00
----
-
 # 사용자 및 권한
 
 - 외부 접속 허용 방법
@@ -45,39 +36,6 @@ DBeaver 에서 다음과 같은 설정을 별도로 해줌
 ```shell
 useSSL : FALSE
 allowPublicKeyRetrieval : TRUE
-```
-
---- 
-
-# CAST()
-
-- 특정 데이터 타입의 값을 형변환 시켜주는 함수
-
-## Syntax
-
-```sql
-CAST(value AS datatype)
-```
-
-| Parameter |                             Description                              |
-| :-------: | :------------------------------------------------------------------: |
-|   value   |                         The value to convert                         |
-| datatype  | DATE, DATETIME, DECIMAL, TIME, CHAR, NCHAR, SIGNED, UNSIGNED, BINARY |
-
-```sql
-SELECT CAST("2017-08-29" AS DATE)
-```
-
-```sql
-SELECT CAST("14:06:10" AS TIME)
-```
-
-```sql
-SELECT CAST(5-10 AS SIGNED)
-```
-
-```sql
-SELECT CAST(150 AS CHAR)
 ```
 ---
 
@@ -227,8 +185,15 @@ SELECT CAST(150 AS CHAR)
 3. 각 컬럼이 유일한(unique) 이름을 가져야 한다.
 4. 칼럼의 순서가 상관없어야 한다.
 
+## PK 순서 결정 기준
+
+앞쪽에 위치한 속성의 값이 비교자로 존재하면 where절에 첫 번째 조건으로 나왔으므로 칼럼 순서에서도 첫번째에 위치하는 것이 효율적이다
+
+- '=', 'BETWEEN', '< >' 로 들어오는 부분을 인덱스로 이용할 수 있다
+
 -----
-# ❗ 참고
+
+## ❗ 참고
 - 속성 : 업무에서 관리되는 정보, 하나만 가지는 값
 - 관계 : 엔터티 간의 관련성 의미하며 존재 관계와 행위 관계로 분류
 - 도메인 : 속성이 가질 수 있는 범위

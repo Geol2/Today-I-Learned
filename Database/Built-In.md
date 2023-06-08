@@ -329,3 +329,31 @@ ORDER BY sal DESC
 FETCH 4 ROWS ONLY;
 ```
 
+## CAST()
+
+- 특정 데이터 타입의 값을 형변환 시켜주는 함수
+
+```sql
+CAST(value AS datatype)
+```
+
+| Parameter |                             Description                              |
+| :-------: | :------------------------------------------------------------------: |
+|   value   |                         The value to convert                         |
+| datatype  | DATE, DATETIME, DECIMAL, TIME, CHAR, NCHAR, SIGNED, UNSIGNED, BINARY |
+
+```sql
+SELECT CAST("2017-08-29" AS DATE)
+```
+
+```sql
+SELECT CAST("14:06:10" AS TIME)
+```
+
+```sql
+SELECT CAST(5-10 AS SIGNED)
+```
+
+```sql
+SELECT CAST(150 AS CHAR)
+```

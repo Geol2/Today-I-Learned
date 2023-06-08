@@ -45,6 +45,11 @@ WHERE job = 'PRESIDENT';
 SELECT * FROM TABLE(dbms_xplan.display);
 ```
 
+## FK (Foreign key) 
+
+FK 생성 여부에 관계없이 조인 성능을 향상시키기 위한 인덱스 생성을 해주는 것이 좋다
+
+
 # SEQUENCE 
 
 고유번호를 생성시키기 위해서 사용
