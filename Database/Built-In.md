@@ -1,5 +1,13 @@
 # 내장 함수
 
+## show processlist
+
+현재 쿼리가 동작 중인 것을 테이블로 볼 수 있다
+
+id, user, host, db command, time, state, info ... 정보를 볼 수 있다
+
+`kill <id>;` 시 해당 쿼리가 실행 중인 id를 삭제할 수 있다
+
 ## lower(), upper(), initcap() : 문자열
 
 - lower : 모두 소문자
