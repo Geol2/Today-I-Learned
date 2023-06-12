@@ -45,7 +45,7 @@ WHERE job = 'PRESIDENT';
 SELECT * FROM TABLE(dbms_xplan.display);
 ```
 
-## FK (Foreign key) 
+## FK (Foreign key)의 인덱스
 
 FK 생성 여부에 관계없이 조인 성능을 향상시키기 위한 인덱스 생성을 해주는 것이 좋다
 
