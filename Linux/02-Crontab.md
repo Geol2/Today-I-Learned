@@ -26,6 +26,9 @@ crontab -r
 ## crontab -r
 - 현재 예약 실행 중인 작업들의 리스트를 삭제한다.
 
+## 크론 작동했는지 확인 방법
+- `tail -f /var/log/syslog | grep CRON`
+
 ## 주기별 예제
 
 ### 간단한 설명
@@ -75,4 +78,10 @@ crontab -r
 
 * * * * * /usr/bin/php -q [클래스명] [함수명]/[파라미터명]/*.log
 
+```
+
+## python 에서의 crontab
+```python
+* * * * * [환경변수/유저] [절대경로 파일이름명].python >> [로그파일 명].log
+# 00 23 * * * /www/.venv/bin/python3 /www/crawling-meme/main.py -blog >> /www/crawling-meme/logs/cronlog-$(date+\%Y\%m\%d).log 2>&1
 ```
