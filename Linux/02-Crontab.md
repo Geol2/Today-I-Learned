@@ -67,6 +67,9 @@ crontab -r
 ```
 - 매일 매 시간마다 5분마다 test.sh를 실행한다.
 
+## PHP 작성 시, 유의점
+
+`$_SERVER` 변수가 작동하지 않으므로 절대경로를 통해서 작성해야 한다.
 
 ## Codeigniter4 crontab 관련 예제
 
