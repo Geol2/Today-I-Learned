@@ -2,6 +2,10 @@
 
 ### __call($name, $args)
 
+함수가 정의되어 있진 않은 함수가 호출되었을 때, 호출되는 매직함수이다
+
+사용해보면 정말 특이하다
+
 ```php
 <?php
 class A {
@@ -22,6 +26,7 @@ $a->foo("Hello, World");
 
 ### __callStatic()
 
+`static` 인 점만 다르고 `__call` 과 동일하다
 
 ```php
 <?php
@@ -39,6 +44,8 @@ A::foo();
 ```
 
 ### __invoke()
+
+객체의 호출을 담당하는 부분
 
 ```php
 <?php
@@ -110,3 +117,44 @@ $a->message = "Hello World";
 var_dump($a->message);
 # string(11) "Hello World"
 ```
+
+### Serialize (직렬화)
+
+```php
+class A {
+    private $message;
+
+    public function __set($name, $value) {
+        $this->$name = $value;
+    }
+
+    public function __get($name) {
+        return $this->$name;
+    }
+}
+
+class B implements Serializeable {
+    private $message = 'Hello, World';
+
+    public function serialize() {
+        return serialize($this->message);
+    }
+
+    public function unserialize($serialize) {
+        $this->message = unserialize($serailized);
+    }
+}
+
+$a = new A();
+$b = new B();
+$serialized = serialize($a);
+
+var_dump($serialized);
+# string(33) "C:1:"B":20:{S:12:{"Hello, world";}}"
+var_dump(unserialize($serialized));
+# class B#3 (1) {
+# private $message =>
+# string(12) "Hello, world"
+# }
+```
+
