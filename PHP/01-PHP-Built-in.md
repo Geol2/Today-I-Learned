@@ -333,3 +333,36 @@ foo($a); // $a is 6 here
 // ref. https://www.php.net/manual/en/language.references.pass.php
 ?>
 ```
+
+## call_user_func()
+
+정의한 함수들을 호출할 수 있다
+
+PHP자체에 정의된 함수, 개발자가 정의한 함수, 클래스 내에 정의한 함수들을 호출할 수 있다
+
+```php
+function myFunc($s)
+{
+    return strtoupper($s);
+}
+
+$sFunc = 'myFunc';
+echo call_user_func($sFunc, 'aabbcc');
+# AABBCC
+```
+
+```php
+<?php 
+namespace Foobar;
+
+class Foo {
+    static public function test() {
+        print "Hello world!\n";
+    }
+}
+
+call_user_func(__NAMESPACE__ .'\Foo::test');
+call_user_func(array(__NAMESPACE__ .'\Foo', 'test')); ?>
+# Hello world!
+# Hello world!
+```
