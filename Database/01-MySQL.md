@@ -17,6 +17,8 @@ FLUSH PRIVILEGES;
 
 `%` 와 `localhost` 차이를 잘 기억해두면 될 듯 하다
 
+해당 계정의 내부, 외부 접속에 대해서 모든 권한을 부여하고 저장한다
+
 ## 사용자 식별
 
 - `'svc_id'@'192.168.0.10' (123)` 은 로컬호스트에서 svc_id라는 아이디로만 접속이 가능하다.
@@ -38,6 +40,17 @@ useSSL : FALSE
 allowPublicKeyRetrieval : TRUE
 ```
 ---
+
+### mysqldump 에러
+```
+IO Error: Utility 'mysqldump.exe' not found in client home
+```
+
+DBeaver에서 제대로 mysql이 설치된 디렉토리를 찾지 못하고 있기때문에 발생하는 오류이다
+
+그러므로 해당 DB 우클릭 후 `Edit Connection -> Local Client`에 올바르게 설치된 DB 디렉토리를 설정해주면 된다.
+
+
 
 # 🗨 데이터 모델링
 

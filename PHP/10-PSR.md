@@ -5,6 +5,10 @@
 - ref. [PSR_standard_en](https://www.php-fig.org/psr/)
 - 영어 링크가 항상 우선시 된다.
 
+### Accept : 승인된 표준안
+### Draft : 논의 중인 표준안
+### Abandoned : 버려진 표준안
+### deplicated : 삭제된 표준안
 ---
 
 # PSR-1 : basic-coding-standard
