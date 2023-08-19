@@ -29,6 +29,19 @@ Arrays.setAll(arr, (i) => (int)(Math.random() * 5 + 1));
 
 ## 함수형 인터페이스
 
+단 하나의 추상 메서드만 선언된 인터페이스
+
+람다식을 다루기 위한 참조타입은 함수형 인터페이스로 한다
+
+### 선언 방법
+```java
+@FunctionalInterface # 컴파일러에게 함수형 인터페이스임을 나타내줌
+interface MyFunction {
+  public void abstract myMethod();
+}
+```
+
+
 ```java
 // 람다식
 타입 f = (int a, int b) -> a > b ? a : b;
