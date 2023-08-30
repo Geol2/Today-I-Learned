@@ -27,14 +27,14 @@ eval $(ssh-agent) # 한번도 실행한 적이 없다면 꼭 해주어야 한다
 .ssh로 이동했다면 다음과 같은 명령어를 만들어준다
 
 ```shell
-ssh-keygen -t ed25519 -b 4096 -C "big9401@gmail.com" -f geol_ed25529
+ssh-keygen -t ed25519 -b 4096 -C "big9401@gmail.com" -f geol_ed25519
 ```
 
 하면 두 가지의 파일이 만들어진다
 
 ```
-geol_ed25529
-geol_ed25529.pub
+geol_ed25519
+geol_ed25519.pub
 ```
 
 첫 번째 파일은 비밀키, 두 번째 파일은 공개키가 되고
@@ -42,7 +42,7 @@ geol_ed25529.pub
 비밀키를 추가시킨다
 
 ```shell
-ssh-add geol_ed25529
+ssh-add geol_ed25519
 ```
 
 .ssh/config 파일을 생성해서 다음과 같은 코드를 추가시킨다
@@ -50,7 +50,7 @@ ssh-add geol_ed25529
 ```
 Host bitbucket.org
     AddKeysToAgent yes
-    IdentityFile geol_ed25529
+    IdentityFile geol_ed25519
 ```
 
 이제 빗버킷에 접속해서 개인 빗버킷 세팅에서 ssh key를 추가시켜주어야 한다
@@ -70,7 +70,7 @@ ssh-add -l
 해당 명령어로 잘 등록이 되어있는지 확인하고 안되어 있다면 다음과 같은 명령을 실행한다
 
 ```
-ssh-add geol_ed25529
+ssh-add geol_ed25519
 ```
 
 ### 접속 테스트
