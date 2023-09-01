@@ -1,4 +1,4 @@
-# iptables
+# iptables 방화벽
 
 ```shell
 iptables -V
@@ -18,4 +18,4 @@ iptables -I INPUT [우선순위] -p tcp -s [추가할 아이피] ---dport [포�
 iptables -A INPUT -p tcp -s [추가할 아이피] ---dport [포트] -j ACCEPT
 ```
 
-우선 순위 커맨드 입력 시, `-A` 대신 `-I`로 변경하도록 한다
+우선 순위가 필요할 때는, `-A` 대신 `-I`로 변경하도록 한다
