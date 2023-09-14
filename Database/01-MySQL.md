@@ -16,12 +16,20 @@ FLUSH PRIVILEGES;
 ```
 
 - 해당 사용자 계정에 특정 사용자에게도 권한을 부여해야 할 때 방법
+
 ```sql
 GRANT all ON [데이터베이스].[테이블] TO '계정명'@'localhost' WITH GRANT OPTION; 
 FLUSH PRIVILEGES;
 ```
+WITH GRANT OPTION 은 A가 B에 부여하고 B가 다시 C에게 부여했을 때, 권한을 취소(REVOKE)하면 모든 권한이 취소되는데 Oracle 한정인 것 같다.
+
+- 권한 회수
+```sql
+REVOKE [privileges] ON [object] TO [User];
+```
 
 - 사용자 삭제
+
 ```sql
 DROP USER [계정명]@[접속정보];
 FLUSH PRIVILEGES;
