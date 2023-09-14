@@ -27,6 +27,7 @@ WITH GRANT OPTION 은 A가 B에 부여하고 B가 다시 C에게 부여했을 �
 ```sql
 REVOKE [privileges] ON [object] TO [User];
 ```
+권한을 회수하는 명령어
 
 - 사용자 삭제
 
