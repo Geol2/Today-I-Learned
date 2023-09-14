@@ -3,15 +3,27 @@
 - 외부 접속 허용 방법
 
 ```sql
-CREATE USER '계정명'@'%' identified by '패스워드';
-GRANT ALL PRIVILEGES ON *.* to '계정명'@'%';
+CREATE USER '계정명'@'%' IDENTIFIED BY '패스워드';
+GRANT ALL ON [데이터베이스].[테이블] TO '계정명'@'%';
 FLUSH PRIVILEGES;
 ```
 
 - 내부 접속 허용 방법
 ```sql
-CREATE USER '계정명'@'localhost' identified by '패스워드';
-GRANT ALL PRIVILEGES ON *.* to '계정명'@'localhost';
+CREATE USER '계정명'@'localhost' IDENTIFIED BY '패스워드';
+GRANT all ON [데이터베이스].[테이블] TO '계정명'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+- 해당 사용자 계정에 특정 사용자에게도 권한을 부여해야 할 때 방법
+```sql
+GRANT all ON [데이터베이스].[테이블] TO '계정명'@'localhost' WITH GRANT OPTION; 
+FLUSH PRIVILEGES;
+```
+
+- 사용자 삭제
+```sql
+DROP USER [계정명]@[접속정보];
 FLUSH PRIVILEGES;
 ```
 
@@ -22,6 +34,9 @@ FLUSH PRIVILEGES;
 특정 아이피만 허용하고 싶으면 % 대신 아이피를 입력해준다
 
 어떤 계정, 아이피에서 접근할 수 있는지는 다음과 같은 쿼리를 날려서 확인해보면 된다
+
+해당 아이디에 모든 데이터베이스와 테이블을 관리할 수 있는 권한을 주려면 `ON`절의 데이터베이스.테이블에 `*.*` 을 적어준다
+
 
 ```sql
 use mysql;
