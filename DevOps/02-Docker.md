@@ -1,4 +1,7 @@
-# 간단한 명령어 모음집
+# Docker 사용하기
+
+- `-it` 옵션은 실행 후 바로 꺼지지 않게 하기 위해서 한다
+- `-p` 옵션을 이용해서 여러 포트를 로컬과 컨테이너 포트에 매핑을 할 수 있다
 
 
 ## php 버전 선택하기
@@ -13,8 +16,23 @@ update-alternatives --config php
 # 선택한 뒤, 만든 php 버전을 선택한 뒤에 맞는 php[버전]-[패키지명] 으로 필요 패키지를 전부 설치해주는 것이 좋다
 ```
 
+## mysql, mariadb 접속하기
 
-## 이미지 커밋/푸쉬하기
+```shell
+docker pull mysql
+docker run -it -p 3307:3306 /bin/bash
+````
+
+```php
+$DB_HOST = "docker.for.mac.host.internal";
+$DB_PORT = "3307";
+$DB_USER = "root";
+$DB_PW = "비번";
+$DB_NAME = "데이터베이스 이름";
+```
+
+
+## docker commit, push
 
 ```shell
 # 최근 이미지 커밋/푸쉬
@@ -24,10 +42,19 @@ docker commit [CONTAINER_NAME] [IMAGE_NAME]:[TAG] # 커밋
 docker push [IMAGE_NAME]:[TAG] # 푸쉬
 ```
 
-## exec
+## docker exec
 
-도커에 접속하기 위한 명령어
+도커 컨테이너에에 접속하기 위한 명령어
 
 ```shell
 docker exec -it [container] /bin/bash
 ```
+
+## docker run
+
+도커 이미지를 컨테이너로 실행하기 위해서 사용할 수 있다.
+
+```shell
+docker run --name [컨테이너 이름] -p [로컬포트]:[컨테이너포트] -p[로컬포트]:[컨테이너포트] -it [도커 이미지] /bin/bash
+```
+
