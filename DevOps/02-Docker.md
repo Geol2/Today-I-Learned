@@ -24,7 +24,7 @@ docker run -it -p 3307:3306 /bin/bash
 ````
 
 ```php
-$DB_HOST = "docker.for.mac.host.internal";
+$DB_HOST = "docker.for.mac.host.internal"; # docker.host.internal
 $DB_PORT = "3307";
 $DB_USER = "root";
 $DB_PW = "비번";
