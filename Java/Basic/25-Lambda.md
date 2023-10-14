@@ -78,3 +78,45 @@ Object obj = (Object)(()->()); // Object형 타입으론 변환할 수 없다
 Object obj = (Object)(MyFunction(()->()));
 ```
 
+
+## 람다 예제
+
+```java
+List<Product> product = new ArrayList<>();
+product.add(new Product(100L, "name1", "100"));
+product.add(new Product(200L, "name2", "200"));
+product.add(new Product(300L, "name3", "300"));
+
+// product 객체에 있는 상품번호를 prdNos에 담아보세요. for문 사용해서
+List<Long> prdNos = new ArrayList<>();
+/**
+ * for(int i = 0; i < product.size(); i++) {
+ *    prdNos.add(product.get(i).prdNo);
+ *  } 
+ **/
+
+// 람다로 변환
+prdNos = product.stream()
+    .map(x -> x.prdNo)
+    .collect(Collectors.toList());
+System.out.println(prdNos);
+
+
+//상품가격이 200이상인 경우의 리스트만 담기
+List<Product> productOver_2000Won = new ArrayList<>();
+// for 문으로 일단 작성
+/** 
+ * for(int i = 0; i < product.size(); i++) {
+ *    if(Integer.parseInt(product.get(i).prdPrice) >= 200) {
+ *        productOver_2000Won.add(product.get(i));
+ *    }
+ * } 
+ **/
+
+// 람다로 변환
+productOver_2000Won = product.stream()
+    .filter(x -> Integer.parseInt(x.prdPrice) >= 200)
+    .collect(Collectors.toList());
+
+System.out.println(productOver_2000Won.size());
+```
