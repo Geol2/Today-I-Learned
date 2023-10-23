@@ -49,6 +49,29 @@ SELECT * FROM TABLE(dbms_xplan.display);
 
 FK 생성 여부에 관계없이 조인 성능을 향상시키기 위한 인덱스 생성을 해주는 것이 좋다
 
+## 페이징 스킬
+
+### 보통 페이징 처리
+
+```sql
+SELECT * FROM 테이블명 LIMIT (숫자 A), (숫자 B)
+```
+
+### 인덱스 페이징 처리
+
+```sql
+SELECT * FROM 테이블명 LIMIT (숫자 A) OFFSET (숫자 B)
+```
+B번째부터 A개수까지 가져오는 방법
+
+- OFFSET : 풀 스캔 방식으로 모든 레코드를 조회한 뒤, 범위를 조회하기 때문에 크게 설정하면 속도가 느리게 된다
+
+```sql
+SELECT * FROM 테이블명 WHERE 컬럼 >= (숫자 A) LIMIT (숫자 B)
+```
+A 부터 B 개수만큼 가져오는 방법
+
+offset을 사용하지 않고 더 빠르게 가져올 수 있다
 
 # SEQUENCE 
 
