@@ -15,3 +15,5 @@
 bash : Boume Again SHell의 약자, Unix 쉘 및 명령어 언어 인터프리터 중 하나이다.
 
 ssh : secure shell 약자, 원격 호스트에 접속하기 위해 사용되는 보안 프로토콜
+
+bashrc : 사용자의 bash 쉘 개인 초기화 스크립트, 시작 할 때마다 자동 실행됨
