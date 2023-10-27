@@ -73,3 +73,12 @@ passwd -e username # 다음 로그인 시, 패스워드 변경을 반드시 한�
 - disable : 계정 만기일
 - reserved : 공백
 
+
+- su 명령으로 간단하게 관리자 권한을 획득
+
+```shell
+# debian
+sudo passwd root
+# 패스워드 지정
+# 패스워드 재지정
+```
