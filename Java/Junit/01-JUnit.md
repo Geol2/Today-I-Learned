@@ -69,3 +69,19 @@ Actual   :60.0
 
 2 tests completed, 1 failed
 ```
+
+### 간단한 콘솔에서 실행하는 방법
+
+```shell
+# Windows
+javac -cp \junit4.6\junit-4.6.jar *.java
+javac -cp \junit4.6\junit-4.6.jar *.java org.junit.runner.JUnitCore CalculatorTest # 테스트 러너
+# Unix
+javac -cp /opt/junit4.6/junit-4.6.jar *.jar 
+javac -cp /opt/junit4.6/junit-4.6.jar *.jar org.junit.runner.JUnitCore CalculatorTest # 테스트 러너
+```
+
+콘솔에서 실행하는 것도 있지만 IntelliJ나 이클립스 툴에서도 테스트를 충분히 실행해볼 수 있다.
+
+
+자동화된 테스트를 사용하는 개발자가 되어서 해당 만들어둔 테스트를 계속 재사용해서 코드를 증명할 수 있게 만드는 것이 좋다.
