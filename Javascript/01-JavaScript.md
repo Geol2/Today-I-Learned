@@ -1,12 +1,3 @@
----
-title: "JavaScript Languages"
-categories:
-  - JavaScript
-tags:
-  - JavaScript
-last_modified_at: 2022-02-14T18:40:00-23:59:59
----
-
 # Variable - var, let, const
 
 - var : 호이스팅 및 함수 스코프 단위

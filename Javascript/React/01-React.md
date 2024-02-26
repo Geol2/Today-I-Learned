@@ -1,12 +1,3 @@
----
-title: "React"
-categories:
-  - React
-tags:
-  - React
-last_modified_at: 2022-08-29T18:00:00-20:00:00
----
-
 # Class Component
 
 ## 간단한 첫 컴포넌트 생성

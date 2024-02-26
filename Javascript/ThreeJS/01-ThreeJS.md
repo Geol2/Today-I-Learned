@@ -1,12 +1,3 @@
----
-title: "Three.js - Creating a scene"
-categories:
-  - Three.js
-tags:
-  - Three.js
-last_modified_at: 2022-06-13T09:00:00-10:00:00
----
-
 # Creating a scene (장면 만들기)
 
 three.js 에 대한 간략한 설멍을 하고 있다. 간단한 실습 예제의 설명과 코드를 첨부.
