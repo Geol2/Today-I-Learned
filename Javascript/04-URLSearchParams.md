@@ -20,3 +20,14 @@ url: `CAP-GET-/sale/deposit?` + new URLSearchParams(params).toString()
 console.log(new URLSearchParams(params).toString());
 // pageNo=1&pageSize=10&sortKey=ctrtNm&sortVal=D
 ```
+
+### 현재의 쿼리스트링을 가져오는 방법
+
+```javascript
+let params = new URLSearchParams(location.search);
+let value = params.get("key"); // good!
+
+for (const [key, value] of mySearchParams.entries()) {
+  console.log(key + ', ' + value); // good!
+}
+```
