@@ -43,6 +43,14 @@ docker commit [CONTAINER_NAME] [IMAGE_NAME]:[TAG] # 커밋
 docker push [IMAGE_NAME]:[TAG] # 푸쉬
 ```
 
+## docker build -t {이미지 이름}
+
+dockerfile 에 지정된 명령어를 따라 실행해주는 명령어
+
+```shell
+docker build -t {이미지 이름}
+```
+
 ## docker run
 
 도커 이미지를 컨테이너로 실행하기 위해서 사용할 수 있다.
