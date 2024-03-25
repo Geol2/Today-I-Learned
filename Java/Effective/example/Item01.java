@@ -1,4 +1,4 @@
-package Java.Effective;
+package Java.Effective.example;
 
 interface Person {
   public String hello(); 
