@@ -76,6 +76,35 @@ for i, entry in enumerate(['A', 'B', 'C']):
 # 2 C
 ```
 
+# list()
+
+리스트 생성자로 빈 리스트를 생성할 수 있다.
+
+[](리스트 리터럴)과 형태는 비슷하지만 실제로 작동시간은 이 방법이 더 짧을 수 있다.
+
+명시적으로 사용하고 싶을 경우, 좋은 방법에 해당될 수 있다.
+
+```python
+a = ['test', 'test', 'test1', 'test2', 'test3']
+a.count('test')
+# 2
+
+b = list()
+b.append('test')
+b.append('test')
+b.append('test2')
+b.append('test3')
+```
+
+```python
+from timeit import timeit
+
+print(timeit("[]"))
+print(timeit("list()"))
+
+# 0.023734500049613416
+# 0.039731499971821904
+```
 
 ---
 
