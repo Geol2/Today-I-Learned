@@ -1,5 +1,7 @@
 # JUnit
 
+https://martinfowler.com/bliki/UnitTest.html
+
 모든 단위 테스트에 대한 프레임워크가 따라야 하는 세 가지 규칙
 
 - 단위 테스트는 다른 모든 단위 테스트들과 독립적으로 실행되어야 한다
