@@ -1,6 +1,6 @@
 # DevOps
 
-개발(Develop)과 운영(Ops)의 합성어
+개발(Development)과 운영(Operations)의 합성어
 
 고객에게 지속적으로 가치를 제공하도록 지원하는 사람, 프로세스 및 기술의 합집합
 
