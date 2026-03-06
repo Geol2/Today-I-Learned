@@ -105,4 +105,32 @@ a[19:-7] => "You need"
 >>> "I ate {0} apples. so I was sick for {1} days.".format(number, day)
 'I ate 10 apples. so I was sick for three days.'
 >>> "I ate {number} apples. so I was sick for {day} days.".format(number=10, day=3)
+>>> "I ate {0} apples. so I was sick for {day} days.".format(10, day=3)
+
+>>> "{0:<10}".format("hi")
+'hi        '
+
+>>> "{0:>10}".format("hi")
+'        hi'
+
+>>> "{0:^10}".format("hi")
+'    hi    '
+
+>>> "{0:=^10}".format("hi")
+'====hi===='
+
+>>> "{0:!<10}".format("hi")
+'!!!!hi!!!!'
+
+>>> y = 3.42134234
+>>> "0:0.4f".format(y)
+'3.413'
+
+>>> "0:10.4f".format(y)
+'    3.4213'
+
+>>> "{{ and }}".format()
+'{ and }'
+
+
 ```
